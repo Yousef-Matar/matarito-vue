@@ -1,0 +1,8 @@
+:root {
+	@each $severity, $color in meta.module-variables("colors") {
+		--#{$severity}: #{$color};
+	}
+	@each $name, $value in meta.module-variables("opacities") {
+		--#{$name}: #{$value};
+	}
+}
