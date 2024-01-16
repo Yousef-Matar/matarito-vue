@@ -149,6 +149,11 @@ const iconClass = computed(() => {
 				box-shadow:
 					0 0 0 2px white,
 					0 0 0 4px $color;
+				@include darkMode {
+					box-shadow:
+						0 0 0 2px black,
+						0 0 0 4px $color;
+				}
 			}
 			&:enabled:not(.m-button--text, .m-button--outlined):hover {
 				background-color: darken($color, 10%);
