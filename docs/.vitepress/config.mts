@@ -63,8 +63,7 @@ export default defineConfig({
 				additionalData: `
 				@use "sass:meta";
 				@use "matarito-vue/assets/scss/variables/colors";
-				@use "matarito-vue/assets/scss/variables/opacities";
-				@import "matarito-vue/assets/scss/variables.scss";
+				@import "matarito-vue/assets/scss/global";
 				`
 			}
 		}

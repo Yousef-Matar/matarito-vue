@@ -1,6 +1,14 @@
 .demo-container {
-	display: flex;
-	gap: 1rem;
-	flex-wrap: wrap;
-	align-items: center;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.demo-container > div {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
 }

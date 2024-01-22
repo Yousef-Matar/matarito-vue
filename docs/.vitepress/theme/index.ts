@@ -2,6 +2,7 @@ import MataritoVue from 'matarito-vue'
 import DefaultTheme from 'vitepress/theme'
 import DemoContainer from '../components/DemoContainer.vue'
 import './demo-container.css'
+import './general.css'
 export default {
    ...DefaultTheme,
    enhanceApp({ app }) {

@@ -1,0 +1,20 @@
+.collapsable-header {
+  cursor: pointer;
+  margin: 32px 0 0;
+  letter-spacing: -0.01em;
+  line-height: 28px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.collapsable-header:first-letter {
+  text-transform: capitalize;
+}
+.vp-doc .full-width > * {
+  width: 100%;
+}
+.vp-doc .d-table > * {
+  display: table;
+}
+pre {
+  max-height: 600px;
+}

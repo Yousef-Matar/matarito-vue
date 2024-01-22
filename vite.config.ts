@@ -34,8 +34,7 @@ export default defineConfig({
 				additionalData: `
 				@use "sass:meta";
 				@use "@/assets/scss/variables/colors";
-				@use "@/assets/scss/variables/opacities";
-				@import "@/assets/scss/variables.scss";
+				@import "@/assets/scss/global";
 				`
 			}
 		}

@@ -3,10 +3,13 @@
 		:type="type"
 		:class="buttonClass"
 		:disabled="disabled || loading"
-		@click.stop>
+		:title="buttonAccessability"
+		:aria-label="buttonAccessability"
+		:aria-labelledby="buttonAccessability"
+		@click="(event) => clickHandler(event)">
 		<i
 			v-if="loading && loadingIcon"
-			:class="loadingIcon" />
+			:class="loadingIconClass" />
 		<template v-else>
 			<i
 				v-if="icon"
@@ -22,14 +25,17 @@
 	</button>
 </template>
 <script setup lang="ts">
-import type { PropType, ButtonHTMLAttributes } from "vue";
 import { computed, useSlots } from "vue";
+import type { ButtonHTMLAttributes, PropType } from "vue";
+
 const props = defineProps({
 	disabled: Boolean,
 	loading: Boolean,
 	raised: Boolean,
+	rounded: Boolean,
+	propagate: Boolean,
 	label: { type: String, default: null },
-	loadingIcon: { type: String, default: null },
+	loadingIcon: { type: String, default: "pi pi-spinner" },
 	icon: { type: String, default: null },
 	type: {
 		type: String as PropType<ButtonHTMLAttributes["type"]>,
@@ -40,46 +46,30 @@ const props = defineProps({
 	},
 	size: {
 		type: String,
-		default: "md",
-		validator: (value: string) => {
-			return ["sm", "md", "lg"].includes(value);
-		}
+		default: "md"
 	},
 	variant: {
 		type: String,
-		default: "filled",
-		validator: (value: string) => {
-			return ["filled", "rounded", "text", "outlined"].includes(value);
-		}
+		default: "filled"
 	},
 	severity: {
 		type: String,
-		default: "primary",
-		validator: (value: string) => {
-			return [
-				"primary",
-				"secondary",
-				"success",
-				"info",
-				"warning",
-				"help",
-				"danger"
-			].includes(value);
-		}
+		default: "primary"
 	},
 	iconPosition: {
 		type: String,
-		default: "left",
-		validator: (value: string) => {
-			return ["left", "right"].includes(value);
-		}
+		default: "left"
 	}
 });
+const buttonAccessability = props.label;
 const slots = useSlots();
 const buttonClass = computed(() => {
 	return {
-		[`m-button m-component m-button--${props.severity} m-button--${props.variant} m-button--${props.size}`]:
-			true,
+		"m-button m-component": true,
+		[`m-button--${props.severity}`]: true,
+		[`m-button--${props.size}`]: true,
+		[`m-button--${props.variant}`]: true,
+		"m-button--rounded": props.rounded,
 		"m-button--disabled": props.disabled,
 		"m-button--loading": props.loading,
 		"m-button--icon-only": !props.label && !slots["default"] && props.icon,
@@ -98,10 +88,39 @@ const iconClass = computed(() => {
 		[`${props.icon}`]: props.icon
 	};
 });
+const loadingIconClass = computed(() => {
+	return {
+		[`${props.loadingIcon}`]: props.loadingIcon,
+		"icon--spin": props.loading && props.loadingIcon
+	};
+});
+const clickHandler = (event: MouseEvent) => (!props.propagate ? event.stopPropagation() : null);
 </script>
 <style scoped lang="scss">
-// Base class for button
 .m-button {
+	// Default
+	color: $text-primary;
+	font-size: $md-font;
+	padding: $md-padding;
+	min-width: $md-button-size;
+	min-height: $md-button-size;
+	border-color: $primary;
+	background-color: $primary;
+	&:enabled:focus {
+		outline-offset: 3px;
+		outline: 2px solid $primary;
+	}
+	&:enabled:not(.m-button--text, .m-button--outlined):hover {
+		background-color: darken($primary, 10%);
+	}
+	&:enabled:not(.m-button--filled):hover {
+		background-color: rgba($primary, 0.2);
+	}
+	&.m-button--icon-only {
+		width: $md-button-size;
+		height: $md-button-size;
+	}
+	// Base class for button
 	box-sizing: border-box;
 	border-radius: 0.25rem;
 	transition-property: all;
@@ -115,7 +134,7 @@ const iconClass = computed(() => {
 	justify-content: center;
 	vertical-align: bottom;
 	text-align: center;
-	color: $text-primary;
+	outline: none;
 	// Text
 	&__label {
 		flex-grow: 1;
@@ -125,13 +144,12 @@ const iconClass = computed(() => {
 	}
 	// Icon
 	&__icon {
-		&--left {
-			order: 0;
-		}
+		order: 0;
 		&--right {
 			order: 1;
 		}
 	}
+	// Modifiers
 	&--disabled {
 		cursor: not-allowed;
 		opacity: $disabled-opacity;
@@ -146,19 +164,13 @@ const iconClass = computed(() => {
 			border-color: $color;
 			background-color: $color;
 			&:enabled:focus {
-				box-shadow:
-					0 0 0 2px white,
-					0 0 0 4px $color;
-				@include darkMode {
-					box-shadow:
-						0 0 0 2px black,
-						0 0 0 4px $color;
-				}
+				outline-offset: 3px;
+				outline: 2px solid $color;
 			}
 			&:enabled:not(.m-button--text, .m-button--outlined):hover {
 				background-color: darken($color, 10%);
 			}
-			&:enabled:not(.m-button--filled, .m-button--rounded):hover {
+			&:enabled:not(.m-button--filled):hover {
 				background-color: rgba($color, 0.2);
 			}
 		}
@@ -184,31 +196,31 @@ const iconClass = computed(() => {
 	&--sm {
 		font-size: $sm-font;
 		padding: $sm-padding;
-		min-width: 1.5rem;
-		min-height: 1.5rem;
+		min-width: $sm-button-size;
+		min-height: $sm-button-size;
 		&.m-button--icon-only {
-			width: 1.5rem;
-			height: 1.5rem;
+			width: $sm-button-size;
+			height: $sm-button-size;
 		}
 	}
 	&--md {
 		font-size: $md-font;
 		padding: $md-padding;
-		min-width: 2rem;
-		min-height: 2rem;
+		min-width: $md-button-size;
+		min-height: $md-button-size;
 		&.m-button--icon-only {
-			width: 2rem;
-			height: 2rem;
+			width: $md-button-size;
+			height: $md-button-size;
 		}
 	}
 	&--lg {
 		font-size: $lg-font;
 		padding: $lg-padding;
-		min-width: 2.5rem;
-		min-height: 2.5rem;
+		min-width: $lg-button-size;
+		min-height: $lg-button-size;
 		&.m-button--icon-only {
-			width: 2.5rem;
-			height: 2.5rem;
+			width: $lg-button-size;
+			height: $lg-button-size;
 		}
 	}
 	&--raised {

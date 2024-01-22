@@ -1,0 +1,13 @@
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+$bases: ("icon");
+$value: "spin";
+
+@each $base in $bases {
+	.#{$base}--spin {
+		animation: spin 2s infinite linear;
+	}
+}
