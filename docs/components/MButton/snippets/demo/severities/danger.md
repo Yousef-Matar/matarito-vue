@@ -1,7 +1,9 @@
 <details>
-	<summary class="collapsable-header">
-	Danger
-	</summary>
+<summary class="collapsible-header">
+
+### Danger
+
+</summary>
 <DemoContainer>
 	<MButton label="Danger" severity="danger" />
 	<MButton label="Danger" variant="text" severity="danger" />

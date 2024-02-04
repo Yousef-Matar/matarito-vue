@@ -1,5 +1,6 @@
 ---
 prev: false
+outline: deep
 ---
 
 <script setup>

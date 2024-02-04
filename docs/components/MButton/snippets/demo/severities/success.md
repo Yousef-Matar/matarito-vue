@@ -1,7 +1,9 @@
 <details>
-	<summary class="collapsable-header">
-	Success
-	</summary>
+<summary class="collapsible-header">
+	
+### Success
+
+</summary>
 <DemoContainer>
 	<MButton label="Success" severity="success" />
 	<MButton label="Success" variant="text" severity="success" />

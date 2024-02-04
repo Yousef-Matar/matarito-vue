@@ -1,5 +1,4 @@
 import { resolve } from "node:path";
-import { fileURLToPath } from "node:url";
 import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -25,11 +24,11 @@ export default defineConfig({
 						link: "/components/all-components",
 					},
 					{
-						text: "Atoms",
+						text: "Button",
 						items: [
 							{
-								text: "Button",
-								link: "/components/atoms/MButton/m-button",
+								text: "MButton",
+								link: "/components/MButton/m-button",
 							},
 						],
 					},

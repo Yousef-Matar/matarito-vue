@@ -1,7 +1,9 @@
-<details>
-	<summary class="collapsable-header">
-	Primary
-	</summary>
+<details open>
+<summary class="collapsible-header">
+
+### Primary
+
+</summary>
 <DemoContainer>
 	<MButton label="Primary" />
 	<MButton label="Primary" variant="text" />

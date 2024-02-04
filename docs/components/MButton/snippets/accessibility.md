@@ -74,9 +74,9 @@ export default {
 
 <div class="full-width d-table">
 
-| Key   |          Function          |
-| ----- | :------------------------: |
-| tab   | Moves focus to the button. |
+|  Key  |          Function          |
+| :---: | :------------------------: |
+|  tab  | Moves focus to the button. |
 | space |   Activates the button.    |
 | enter |   Activates the button.    |
 
