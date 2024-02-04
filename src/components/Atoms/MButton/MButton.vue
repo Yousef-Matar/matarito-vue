@@ -227,4 +227,21 @@ const clickHandler = (event: MouseEvent) => (!props.propagate ? event.stopPropag
 		box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.3);
 	}
 }
+.m-button-set {
+	& .m-button {
+		position: relative;
+		border-radius: 0;
+		&:enabled:focus {
+			z-index: 1;
+		}
+		&:first-child {
+			border-top-left-radius: 0.25rem;
+			border-bottom-left-radius: 0.25rem;
+		}
+		&:last-child {
+			border-top-right-radius: 0.25rem;
+			border-bottom-right-radius: 0.25rem;
+		}
+	}
+}
 </style>
