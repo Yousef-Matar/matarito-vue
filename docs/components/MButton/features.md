@@ -7,7 +7,7 @@ outline: deep
    import { MButton } from "matarito-vue";
 </script>
 
-# M-Button
+# MButton
 
 Buttons allow users to take actions, and make choices, with a single tap.
 

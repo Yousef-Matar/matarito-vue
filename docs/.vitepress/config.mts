@@ -28,7 +28,14 @@ export default defineConfig({
 						items: [
 							{
 								text: "MButton",
-								link: "/components/MButton/m-button",
+								link: "/components/MButton/features",
+								collapsed: true,
+								items: [
+									{
+										text: "API",
+										link: "/components/MButton/api",
+									},
+								],
 							},
 						],
 					},

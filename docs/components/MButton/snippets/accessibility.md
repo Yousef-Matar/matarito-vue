@@ -52,10 +52,10 @@ Text to describe the button is defined with the `aria-label` prop, if not presen
 
 <div class="full-width d-table">
 
-|  Key  |          Function          |
-| :---: | :------------------------: |
-|  tab  | Moves focus to the button. |
-| space |   Activates the button.    |
-| enter |   Activates the button.    |
+|   Key   |          Function          |
+| :-----: | :------------------------: |
+|  `Tab`  | Moves focus to the button. |
+| `Space` |   Activates the button.    |
+| `Enter` |   Activates the button.    |
 
 </div>
