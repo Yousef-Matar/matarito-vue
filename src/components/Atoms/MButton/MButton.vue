@@ -65,7 +65,7 @@ const buttonAccessability = props.label;
 const slots = useSlots();
 const buttonClass = computed(() => {
 	return {
-		"m-button m-component": true,
+		"m-button": true,
 		[`m-button--${props.severity}`]: true,
 		[`m-button--${props.size}`]: true,
 		[`m-button--${props.variant}`]: true,
@@ -90,6 +90,7 @@ const iconClass = computed(() => {
 });
 const loadingIconClass = computed(() => {
 	return {
+		"m-button__loading-icon": true,
 		[`${props.loadingIcon}`]: props.loadingIcon,
 		"icon--spin": props.loading && props.loadingIcon
 	};
@@ -145,6 +146,9 @@ const clickHandler = (event: MouseEvent) => (!props.propagate ? event.stopPropag
 	// Icon
 	&__icon {
 		order: 0;
+		&--left {
+			order: 0;
+		}
 		&--right {
 			order: 1;
 		}

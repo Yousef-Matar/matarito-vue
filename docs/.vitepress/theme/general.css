@@ -13,6 +13,10 @@
 .vp-doc .d-table > * {
   display: table;
 }
+
+.vp-doc .d-table tbody tr td:first-child {
+  white-space: nowrap;
+}
 pre {
   max-height: 600px;
 }

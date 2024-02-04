@@ -35,6 +35,10 @@ export default defineConfig({
 										text: "API",
 										link: "/components/MButton/api",
 									},
+									{
+										text: "Theming",
+										link: "/components/MButton/theming",
+									},
 								],
 							},
 						],
