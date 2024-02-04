@@ -250,10 +250,6 @@ MButton can have icons without labels.
 		<MButton icon="pi pi-times" variant="outlined" severity="danger" aria-label="Cancel" title="Cancel" rounded raised />
 	</div>
 </template>
-
-<script setup>
-import { MButton } from "matarito-vue";
-</script>
 ```
 
 ```vue [Options API]
@@ -379,13 +375,6 @@ import { MButton } from "matarito-vue";
 		<MButton icon="pi pi-times" variant="outlined" severity="danger" aria-label="Cancel" title="Cancel" rounded raised />
 	</div>
 </template>
-
-<script>
-import { MButton } from "matarito-vue";
-export default {
-	components: { MButton }
-};
-</script>
 ```
 
 :::

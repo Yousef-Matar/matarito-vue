@@ -13,10 +13,6 @@ MButton component renders a native button element that implicitly includes any p
 	<MButton label="Submit" />
 	<MButton label="Submit" title="Custom title" />
 </template>
-
-<script setup>
-import { MButton } from "matarito-vue";
-</script>
 ```
 
 ```vue [Options API]
@@ -24,13 +20,6 @@ import { MButton } from "matarito-vue";
 	<MButton label="Submit" />
 	<MButton label="Submit" title="Custom title" />
 </template>
-
-<script>
-import { MButton } from "matarito-vue";
-export default {
-	components: { MButton }
-};
-</script>
 ```
 
 :::
@@ -47,10 +36,6 @@ Text to describe the button is defined with the `aria-label` prop, if not presen
 	<MButton icon="pi pi-check" label="Submit" />
 	<MButton aria-label="Submit">Submit</MButton>
 </template>
-
-<script setup>
-import { MButton } from "matarito-vue";
-</script>
 ```
 
 ```vue [Options API]
@@ -59,13 +44,6 @@ import { MButton } from "matarito-vue";
 	<MButton icon="pi pi-check" label="Submit" />
 	<MButton aria-label="Submit">Submit</MButton>
 </template>
-
-<script>
-import { MButton } from "matarito-vue";
-export default {
-	components: { MButton }
-};
-</script>
 ```
 
 :::

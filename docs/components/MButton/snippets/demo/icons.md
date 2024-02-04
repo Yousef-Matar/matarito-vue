@@ -16,10 +16,6 @@ Icon of a button is specified with `icon` property and position is configured us
 	<MButton icon="pi pi-check" label="Submit" />
 	<MButton icon="pi pi-check" iconPosition="right" label="Submit" />
 </template>
-
-<script setup>
-import { MButton } from "matarito-vue";
-</script>
 ```
 
 ```vue [Options API]
@@ -28,13 +24,6 @@ import { MButton } from "matarito-vue";
 	<MButton icon="pi pi-check" label="Submit" />
 	<MButton icon="pi pi-check" iconPosition="right" label="Submit" />
 </template>
-
-<script>
-import { MButton } from "matarito-vue";
-export default {
-	components: { MButton }
-};
-</script>
 ```
 
 :::

@@ -14,10 +14,6 @@ Text to display on a button is defined with the `label` property or the `predefi
 	<MButton label="Submit" />
 	<MButton>Submit</MButton>
 </template>
-
-<script setup>
-import { MButton } from "matarito-vue";
-</script>
 ```
 
 ```vue [Options API]
@@ -25,13 +21,6 @@ import { MButton } from "matarito-vue";
 	<MButton label="Submit" />
 	<MButton>Submit</MButton>
 </template>
-
-<script>
-import { MButton } from "matarito-vue";
-export default {
-	components: { MButton }
-};
-</script>
 ```
 
 :::

@@ -24,10 +24,6 @@
 	<MButton label="Info" variant="text" severity="info" rounded />
 	<MButton label="Info" variant="outlined" severity="info" rounded />
 </template>
-
-<script setup>
-import { MButton } from "matarito-vue";
-</script>
 ```
 
 ```vue [Options API]
@@ -39,13 +35,6 @@ import { MButton } from "matarito-vue";
 	<MButton label="Info" variant="text" severity="info" rounded />
 	<MButton label="Info" variant="outlined" severity="info" rounded />
 </template>
-
-<script>
-import { MButton } from "matarito-vue";
-export default {
-	components: { MButton }
-};
-</script>
 ```
 
 :::

@@ -24,10 +24,6 @@
 	<MButton label="Secondary" variant="text" severity="secondary" rounded />
 	<MButton label="Secondary" variant="outlined" severity="secondary" rounded />
 </template>
-
-<script setup>
-import { MButton } from "matarito-vue";
-</script>
 ```
 
 ```vue [Options API]
@@ -39,13 +35,6 @@ import { MButton } from "matarito-vue";
 	<MButton label="Secondary" variant="text" severity="secondary" rounded />
 	<MButton label="Secondary" variant="outlined" severity="secondary" rounded />
 </template>
-
-<script>
-import { MButton } from "matarito-vue";
-export default {
-	components: { MButton }
-};
-</script>
 ```
 
 :::

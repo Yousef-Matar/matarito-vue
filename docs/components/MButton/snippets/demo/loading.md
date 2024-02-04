@@ -14,10 +14,6 @@ When `loading` is present only the loading icon will appear, the element cannot 
 	<MButton label="Submit" loading />
 	<MButton loadingIcon="pi pi-cog" label="Submit" loading />
 </template>
-
-<script setup>
-import { MButton } from "matarito-vue";
-</script>
 ```
 
 ```vue [Options API]
@@ -25,13 +21,6 @@ import { MButton } from "matarito-vue";
 	<MButton label="Submit" loading />
 	<MButton loadingIcon="pi pi-cog" label="Submit" loading />
 </template>
-
-<script>
-import { MButton } from "matarito-vue";
-export default {
-	components: { MButton }
-};
-</script>
 ```
 
 :::

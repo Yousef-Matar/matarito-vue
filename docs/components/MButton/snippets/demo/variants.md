@@ -28,10 +28,6 @@ The `MButton` can also be rounded using `rounded` property.
 	<MButton label="Text-rounded" variant="text" rounded />
 	<MButton label="outlined-rounded" variant="outlined" rounded />
 </template>
-
-<script setup>
-import { MButton } from "matarito-vue";
-</script>
 ```
 
 ```vue [Options API]
@@ -43,13 +39,6 @@ import { MButton } from "matarito-vue";
 	<MButton label="Text-rounded" variant="text" rounded />
 	<MButton label="outlined-rounded" variant="outlined" rounded />
 </template>
-
-<script>
-import { MButton } from "matarito-vue";
-export default {
-	components: { MButton }
-};
-</script>
 ```
 
 :::

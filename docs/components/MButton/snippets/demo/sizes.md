@@ -16,10 +16,6 @@ For larger or smaller buttons, use the `size` property. The `MButton` comes in t
 	<MButton label="Medium" />
 	<MButton label="Large" size="lg" />
 </template>
-
-<script setup>
-import { MButton } from "matarito-vue";
-</script>
 ```
 
 ```vue [Options API]
@@ -28,13 +24,6 @@ import { MButton } from "matarito-vue";
 	<MButton label="Medium" />
 	<MButton label="Large" size="lg" />
 </template>
-
-<script>
-import { MButton } from "matarito-vue";
-export default {
-	components: { MButton }
-};
-</script>
 ```
 
 :::
