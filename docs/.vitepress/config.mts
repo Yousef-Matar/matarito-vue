@@ -72,7 +72,7 @@ export default defineConfig({
 			scss: {
 				additionalData: `
 				@use "sass:meta";
-				@use "matarito-vue/assets/scss/variables/colors";
+				@use "matarito-vue/assets/scss/variables/severities";
 				@import "matarito-vue/assets/scss/global";
 				`
 			}

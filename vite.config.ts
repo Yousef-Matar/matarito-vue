@@ -33,7 +33,7 @@ export default defineConfig({
 			scss: {
 				additionalData: `
 				@use "sass:meta";
-				@use "@/assets/scss/variables/colors";
+				@use "@/assets/scss/variables/severities";
 				@import "@/assets/scss/global";
 				`
 			}

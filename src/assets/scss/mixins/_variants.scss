@@ -1,0 +1,52 @@
+
+@mixin generateVariants($base) {
+	.m-#{$base} {
+		color: var(--#{$base}-text-primary, var(--text-primary, $text-primary));
+		box-sizing: border-box;
+		border-radius: var(
+			--#{$base}-border-radius,
+			var(--border-radius, $default)
+		);
+		outline: none;
+		border: unset;
+		&--disabled {
+			cursor: not-allowed;
+			opacity: var(
+				--#{$base}-disabled-opacity,
+				var(--disabled-opacity, $disabled-opacity)
+			);
+		}
+		&--rounded {
+			border-radius: var(
+				--#{$base}-rounded-radius,
+				var(--rounded-radius, $rounded)
+			);
+		}
+		&--outlined {
+			border-width: 1px;
+			border-style: solid;
+		}
+		&--raised {
+			box-shadow: 1px 1px 3px 2px
+				var(--#{$base}-raised-shadow, var(--raised-shadow, $raised));
+		}
+		&--sm {
+			font-size: var(--#{$base}-sm-font, var(--sm-font, $sm-font));
+			padding: var(--#{$base}-sm-padding, var(--sm-padding, $sm-padding));
+			min-width: var(--#{$base}-sm-size, var(--sm-size, $sm-size));
+			min-height: var(--#{$base}-sm-size, var(--sm-size, $sm-size));
+		}
+		&--md {
+			font-size: var(--#{$base}-md-font, var(--md-font, $md-font));
+			padding: var(--#{$base}-md-padding, var(--md-padding, $md-padding));
+			min-width: var(--#{$base}-md-size, var(--md-size, $md-size));
+			min-height: var(--#{$base}-md-size, var(--md-size, $md-size));
+		}
+		&--lg {
+			font-size: var(--#{$base}-lg-font, var(--lg-font, $lg-font));
+			padding: var(--#{$base}-lg-padding, var(--lg-padding, $lg-padding));
+			min-width: var(--#{$base}-lg-size, var(--lg-size, $lg-size));
+			min-height: var(--#{$base}-lg-size, var(--lg-size, $lg-size));
+		}
+	}
+}

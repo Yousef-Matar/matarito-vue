@@ -97,45 +97,19 @@ const loadingIconClass = computed(() => {
 });
 const clickHandler = (event: MouseEvent) => (!props.propagate ? event.stopPropagation() : null);
 </script>
-<style scoped lang="scss">
+<style lang="scss">
 .m-button {
-	// Default
-	color: $text-primary;
-	font-size: $md-font;
-	padding: $md-padding;
-	min-width: $md-button-size;
-	min-height: $md-button-size;
-	border-color: $primary;
-	background-color: $primary;
-	&:enabled:focus {
-		outline-offset: 3px;
-		outline: 2px solid $primary;
-	}
-	&:enabled:not(.m-button--text, .m-button--outlined):hover {
-		background-color: darken($primary, 10%);
-	}
-	&:enabled:not(.m-button--filled):hover {
-		background-color: rgba($primary, 0.2);
-	}
-	&.m-button--icon-only {
-		width: $md-button-size;
-		height: $md-button-size;
-	}
 	// Base class for button
-	box-sizing: border-box;
-	border-radius: 0.25rem;
 	transition-property: all;
 	transition-timing-function: linear;
 	transition-duration: 200ms;
 	cursor: pointer;
-	border: unset;
 	display: inline-flex;
 	gap: 0.5rem;
 	align-items: center;
 	justify-content: center;
 	vertical-align: bottom;
 	text-align: center;
-	outline: none;
 	// Text
 	&__label {
 		flex-grow: 1;
@@ -154,81 +128,59 @@ const clickHandler = (event: MouseEvent) => (!props.propagate ? event.stopPropag
 		}
 	}
 	// Modifiers
-	&--disabled {
-		cursor: not-allowed;
-		opacity: $disabled-opacity;
-	}
 	&--loading {
 		cursor: wait;
-		opacity: $loading-opacity;
+		opacity: var(--button-loading-opacity, var(--loading-opacity, $loading-opacity));
 	}
 	// Severities
-	@each $severity, $color in meta.module-variables("colors") {
+	@each $severity, $color in meta.module-variables("severities") {
 		&--#{$severity} {
-			border-color: $color;
-			background-color: $color;
-			&:enabled:focus {
-				outline-offset: 3px;
-				outline: 2px solid $color;
-			}
-			&:enabled:not(.m-button--text, .m-button--outlined):hover {
-				background-color: darken($color, 10%);
-			}
-			&:enabled:not(.m-button--filled):hover {
-				background-color: rgba($color, 0.2);
+			border-color: var(--button-#{$severity}, var(--#{$severity}, $color));
+			background-color: var(--button-#{$severity}, var(--#{$severity}, $color));
+			&:enabled {
+				&:focus {
+					outline-offset: 3px;
+					outline: 2px solid var(--button-#{$severity}, var(--#{$severity}, $color));
+				}
+				&:hover {
+					&.m-button--filled {
+						background-color: var(--button-#{$severity}-filled-hover, var(--#{$severity}-filled-hover, darken($color, 10%)));
+					}
+					&.m-button--text {
+						background-color: var(--button-#{$severity}-text-hover, var(--#{$severity}-text-hover, rgba($color, 0.2)));
+					}
+					&.m-button--outlined {
+						background-color: var(
+							--button-#{$severity}-outlined-hover,
+							var(--#{$severity}-outlined-hover, rgba($color, 0.2))
+						);
+					}
+				}
 			}
 		}
 	}
 	// Variants
-	&--rounded {
-		border-radius: 2rem;
-	}
-	&--outlined {
-		border-width: 1px;
-		border-style: solid;
-	}
 	&--text,
 	&--outlined {
 		background: transparent;
-		@each $severity, $color in meta.module-variables("colors") {
+		@each $severity, $color in meta.module-variables("severities") {
 			&.m-button--#{$severity} {
-				color: $color;
+				color: var(--button-#{$severity}, var(--#{$severity}, $color));
 			}
 		}
 	}
 	// Sizes
-	&--sm {
-		font-size: $sm-font;
-		padding: $sm-padding;
-		min-width: $sm-button-size;
-		min-height: $sm-button-size;
-		&.m-button--icon-only {
-			width: $sm-button-size;
-			height: $sm-button-size;
-		}
+	&--sm.m-button--icon-only {
+		width: var(--button-sm-size, var(--sm-size, $sm-size));
+		height: var(--button-sm-size, var(--sm-size, $sm-size));
 	}
-	&--md {
-		font-size: $md-font;
-		padding: $md-padding;
-		min-width: $md-button-size;
-		min-height: $md-button-size;
-		&.m-button--icon-only {
-			width: $md-button-size;
-			height: $md-button-size;
-		}
+	&--md.m-button--icon-only {
+		width: var(--button-md-size, var(--md-size, $md-size));
+		height: var(--button-md-size, var(--md-size, $md-size));
 	}
-	&--lg {
-		font-size: $lg-font;
-		padding: $lg-padding;
-		min-width: $lg-button-size;
-		min-height: $lg-button-size;
-		&.m-button--icon-only {
-			width: $lg-button-size;
-			height: $lg-button-size;
-		}
-	}
-	&--raised {
-		box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.3);
+	&--lg.m-button--icon-only {
+		width: var(--button-lg-size, var(--lg-size, $lg-size));
+		height: var(--button-lg-size, var(--lg-size, $lg-size));
 	}
 }
 .m-button-set {
@@ -239,13 +191,14 @@ const clickHandler = (event: MouseEvent) => (!props.propagate ? event.stopPropag
 			z-index: 1;
 		}
 		&:first-child {
-			border-top-left-radius: 0.25rem;
-			border-bottom-left-radius: 0.25rem;
+			border-top-left-radius: var(--button-border-radius, var(--border-radius, $default));
+			border-bottom-left-radius: var(--button-border-radius, var(--border-radius, $default));
 		}
 		&:last-child {
-			border-top-right-radius: 0.25rem;
-			border-bottom-right-radius: 0.25rem;
+			border-top-right-radius: var(--button-border-radius, var(--border-radius, $default));
+			border-bottom-right-radius: var(--button-border-radius, var(--border-radius, $default));
 		}
 	}
 }
+@include generateVariants(button);
 </style>
