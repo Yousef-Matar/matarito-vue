@@ -10,6 +10,12 @@ API defines helper props, events and others for the matarito MButton module.
 
 `MButton` is an extension to standard button element with icons and theming.
 
+::: tip Note that
+
+Props of the default `html button` are also available.
+
+:::
+
 ## Props
 
 Defines valid properties in MButton component.
