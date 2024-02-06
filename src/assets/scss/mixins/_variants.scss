@@ -1,25 +1,18 @@
-
 @mixin generateVariants($base) {
-	.m-#{$base} {
-		color: var(--#{$base}-text-primary, var(--text-primary, $text-primary));
+	.#{$base} {
+		color: var(--#{$base}-text-primary, var(--text-primary));
 		box-sizing: border-box;
-		border-radius: var(
-			--#{$base}-border-radius,
-			var(--border-radius, $default)
-		);
+		border-radius: var(--#{$base}-border-radius, var(--border-radius));
 		outline: none;
 		border: unset;
 		&--disabled {
 			cursor: not-allowed;
-			opacity: var(
-				--#{$base}-disabled-opacity,
-				var(--disabled-opacity, $disabled-opacity)
-			);
+			opacity: var(--#{$base}-disabled-opacity, var(--disabled-opacity));
 		}
 		&--rounded {
 			border-radius: var(
 				--#{$base}-rounded-radius,
-				var(--rounded-radius, $rounded)
+				var(--rounded-radius)
 			);
 		}
 		&--outlined {
@@ -27,26 +20,25 @@
 			border-style: solid;
 		}
 		&--raised {
-			box-shadow: 1px 1px 3px 2px
-				var(--#{$base}-raised-shadow, var(--raised-shadow, $raised));
+			box-shadow: var(--#{$base}-raised-shadow, var(--raised-shadow));
 		}
 		&--sm {
-			font-size: var(--#{$base}-sm-font, var(--sm-font, $sm-font));
-			padding: var(--#{$base}-sm-padding, var(--sm-padding, $sm-padding));
-			min-width: var(--#{$base}-sm-size, var(--sm-size, $sm-size));
-			min-height: var(--#{$base}-sm-size, var(--sm-size, $sm-size));
+			font-size: var(--#{$base}-sm-font, var(--sm-font));
+			padding: var(--#{$base}-sm-padding, var(--sm-padding));
+			min-width: var(--#{$base}-sm-size, var(--sm-size));
+			min-height: var(--#{$base}-sm-size, var(--sm-size));
 		}
 		&--md {
-			font-size: var(--#{$base}-md-font, var(--md-font, $md-font));
-			padding: var(--#{$base}-md-padding, var(--md-padding, $md-padding));
-			min-width: var(--#{$base}-md-size, var(--md-size, $md-size));
-			min-height: var(--#{$base}-md-size, var(--md-size, $md-size));
+			font-size: var(--#{$base}-md-font, var(--md-font));
+			padding: var(--#{$base}-md-padding, var(--md-padding));
+			min-width: var(--#{$base}-md-size, var(--md-size));
+			min-height: var(--#{$base}-md-size, var(--md-size));
 		}
 		&--lg {
-			font-size: var(--#{$base}-lg-font, var(--lg-font, $lg-font));
-			padding: var(--#{$base}-lg-padding, var(--lg-padding, $lg-padding));
-			min-width: var(--#{$base}-lg-size, var(--lg-size, $lg-size));
-			min-height: var(--#{$base}-lg-size, var(--lg-size, $lg-size));
+			font-size: var(--#{$base}-lg-font, var(--lg-font));
+			padding: var(--#{$base}-lg-padding, var(--lg-padding));
+			min-width: var(--#{$base}-lg-size, var(--lg-size));
+			min-height: var(--#{$base}-lg-size, var(--lg-size));
 		}
 	}
 }

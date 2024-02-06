@@ -130,30 +130,27 @@ const clickHandler = (event: MouseEvent) => (!props.propagate ? event.stopPropag
 	// Modifiers
 	&--loading {
 		cursor: wait;
-		opacity: var(--button-loading-opacity, var(--loading-opacity, $loading-opacity));
+		opacity: var(--m-button-loading-opacity, var(--loading-opacity));
 	}
 	// Severities
 	@each $severity, $color in meta.module-variables("severities") {
 		&--#{$severity} {
-			border-color: var(--button-#{$severity}, var(--#{$severity}, $color));
-			background-color: var(--button-#{$severity}, var(--#{$severity}, $color));
+			border-color: var(--m-button-#{$severity}, var(--#{$severity}));
+			background-color: var(--m-button-#{$severity}, var(--#{$severity}));
 			&:enabled {
 				&:focus {
 					outline-offset: 3px;
-					outline: 2px solid var(--button-#{$severity}, var(--#{$severity}, $color));
+					outline: 2px solid var(--m-button-#{$severity}, var(--#{$severity}));
 				}
 				&:hover {
 					&.m-button--filled {
-						background-color: var(--button-#{$severity}-filled-hover, var(--#{$severity}-filled-hover, darken($color, 10%)));
+						background-color: var(--m-button-#{$severity}-filled-hover, var(--#{$severity}-filled-hover));
 					}
 					&.m-button--text {
-						background-color: var(--button-#{$severity}-text-hover, var(--#{$severity}-text-hover, rgba($color, 0.2)));
+						background-color: var(--m-button-#{$severity}-text-hover, var(--#{$severity}-text-hover));
 					}
 					&.m-button--outlined {
-						background-color: var(
-							--button-#{$severity}-outlined-hover,
-							var(--#{$severity}-outlined-hover, rgba($color, 0.2))
-						);
+						background-color: var(--m-button-#{$severity}-outlined-hover, var(--#{$severity}-outlined-hover));
 					}
 				}
 			}
@@ -165,22 +162,22 @@ const clickHandler = (event: MouseEvent) => (!props.propagate ? event.stopPropag
 		background: transparent;
 		@each $severity, $color in meta.module-variables("severities") {
 			&.m-button--#{$severity} {
-				color: var(--button-#{$severity}, var(--#{$severity}, $color));
+				color: var(--m-button-#{$severity}, var(--#{$severity}));
 			}
 		}
 	}
 	// Sizes
 	&--sm.m-button--icon-only {
-		width: var(--button-sm-size, var(--sm-size, $sm-size));
-		height: var(--button-sm-size, var(--sm-size, $sm-size));
+		width: var(--m-button-sm-size, var(--sm-size));
+		height: var(--m-button-sm-size, var(--sm-size));
 	}
 	&--md.m-button--icon-only {
-		width: var(--button-md-size, var(--md-size, $md-size));
-		height: var(--button-md-size, var(--md-size, $md-size));
+		width: var(--m-button-md-size, var(--md-size));
+		height: var(--m-button-md-size, var(--md-size));
 	}
 	&--lg.m-button--icon-only {
-		width: var(--button-lg-size, var(--lg-size, $lg-size));
-		height: var(--button-lg-size, var(--lg-size, $lg-size));
+		width: var(--m-button-lg-size, var(--lg-size));
+		height: var(--m-button-lg-size, var(--lg-size));
 	}
 }
 .m-button-set {
@@ -191,14 +188,14 @@ const clickHandler = (event: MouseEvent) => (!props.propagate ? event.stopPropag
 			z-index: 1;
 		}
 		&:first-child {
-			border-top-left-radius: var(--button-border-radius, var(--border-radius, $default));
-			border-bottom-left-radius: var(--button-border-radius, var(--border-radius, $default));
+			border-top-left-radius: var(--m-button-border-radius, var(--border-radius));
+			border-bottom-left-radius: var(--m-button-border-radius, var(--border-radius));
 		}
 		&:last-child {
-			border-top-right-radius: var(--button-border-radius, var(--border-radius, $default));
-			border-bottom-right-radius: var(--button-border-radius, var(--border-radius, $default));
+			border-top-right-radius: var(--m-button-border-radius, var(--border-radius));
+			border-bottom-right-radius: var(--m-button-border-radius, var(--border-radius));
 		}
 	}
 }
-@include generateVariants(button);
+@include generateVariants(m-button);
 </style>

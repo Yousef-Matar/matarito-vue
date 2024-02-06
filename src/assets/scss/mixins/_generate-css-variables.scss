@@ -1,0 +1,70 @@
+@use "sass:meta";
+@use "../variables/severities";
+@use "../variables/colors";
+@use "../variables/opacities";
+@use "../variables/paddings";
+@use "../variables/typography";
+@use "../variables/sizes";
+@use "../variables/border-radius";
+@use "../variables/box-shadows";
+@mixin generateCssVariables($base: "") {
+	:root {
+		@each $propertyName, $value in meta.module-variables("severities") {
+			--#{$propertyName}: #{$value};
+			--#{$propertyName}-filled-hover: #{darken($value, 10%)};
+			--#{$propertyName}-text-hover: #{rgba($value, 0.2)};
+			--#{$propertyName}-outlined-hover: #{rgba($value, 0.2)};
+		}
+		@each $propertyName, $value in meta.module-variables("colors") {
+			--#{$propertyName}: #{$value};
+		}
+		@each $propertyName, $value in meta.module-variables("opacities") {
+			--#{$propertyName}: #{$value};
+		}
+		@each $propertyName, $value in meta.module-variables("paddings") {
+			--#{$propertyName}: #{$value};
+		}
+		@each $propertyName, $value in meta.module-variables("typography") {
+			--#{$propertyName}: #{$value};
+		}
+		@each $propertyName, $value in meta.module-variables("sizes") {
+			--#{$propertyName}: #{$value};
+		}
+		@each $propertyName, $value in meta.module-variables("border-radius") {
+			--#{$propertyName}: #{$value};
+		}
+		@each $propertyName, $value in meta.module-variables("box-shadows") {
+			--#{$propertyName}: #{$value};
+		}
+		// @if $base != "" {
+		// 	@each $propertyName, $value in meta.module-variables("severities") {
+		// 		--#{$base}-#{$propertyName}: #{$value};
+		// 	}
+		// 	@each $propertyName, $value in meta.module-variables("colors") {
+		// 		--#{$base}-#{$propertyName}: #{$value};
+		// 	}
+		// 	@each $propertyName, $value in meta.module-variables("opacities") {
+		// 		--#{$base}-#{$propertyName}: #{$value};
+		// 	}
+		// 	@each $propertyName, $value in meta.module-variables("paddings") {
+		// 		--#{$base}-#{$propertyName}: #{$value};
+		// 	}
+		// 	@each $propertyName, $value in meta.module-variables("typography") {
+		// 		--#{$base}-#{$propertyName}: #{$value};
+		// 	}
+		// 	@each $propertyName, $value in meta.module-variables("sizes") {
+		// 		--#{$base}-#{$propertyName}: #{$value};
+		// 	}
+		// 	@each $propertyName,
+		// 		$value in meta.module-variables("border-radius")
+		// 	{
+		// 		--#{$base}-#{$propertyName}: #{$value};
+		// 	}
+		// 	@each $propertyName, $value in meta.module-variables("box-shadows")
+		// 	{
+		// 		--#{$base}-#{$propertyName}: #{$value};
+		// 	}
+		// } @else {
+		// }
+	}
+}
