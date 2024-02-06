@@ -14,6 +14,7 @@ export default defineConfig({
 				items: [
 					{ text: "Overview", link: "/guide/overview" },
 					{ text: "Installation", link: "/guide/installation" },
+					{ text: "Usage", link: "/guide/usage" },
 				],
 			},
 			{
@@ -64,6 +65,14 @@ export default defineConfig({
 			{
 				text: "Theming",
 				link: "/theming/theming",
+			},
+			{
+				text: "Discover",
+				collapsed: true,
+				items: [
+					{ text: "About Us", link: "/discover/about-us" },
+					{ text: "Source code", link: "https://github.com/Yousef-Matar/matarito-vue" },
+				],
 			},
 		],
 		search: {

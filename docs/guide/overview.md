@@ -1,67 +1,16 @@
-# Overview
+# Matarito-vue Overview
 
-# Markdown Extension Examples
+Matarito-vue is an open-source Vue component library. It's comprehensive and can be used in production out of the box.
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+## Introduction
 
-## Syntax Highlighting
+Matarito-vue is an open-source Vue component library.
 
-VitePress provides Syntax Highlighting powered by [Shikiji](https://github.com/antfu/shikiji), with additional features like line-highlighting:
+It's comprehensive and can be used in production out of the box.
 
-**Input**
+Matarito-vue is beautiful by design and features a suite of customization options that make it easy to implement your own custom design system.
 
-````md
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-````
+## Advantages of Matarito-vue
 
-**Output**
-
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-
-## Custom Containers
-
-**Input**
-
-```md
-::: info This is an info box. :::
-
-::: tip This is a tip. :::
-
-::: warning This is a warning. :::
-
-::: danger This is a dangerous warning. :::
-
-::: details This is a details block. :::
-```
-
-**Output**
-
-::: info This is an info box. :::
-
-::: tip This is a tip. :::
-
-::: warning This is a warning. :::
-
-::: danger This is a dangerous warning. :::
-
-::: details This is a details block. :::
-
-## More
-
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+- **Beautiful by default**: Every Matarito-vue component meets the highest standards of form and function
+- **Customizability**: The library includes an extensive set of intuitive customizability features. The [theming section](../theming/theming) demonstrates how far you can go with customization.
