@@ -42,6 +42,20 @@ export default defineConfig({
 									},
 								],
 							},
+							{
+								text: "MButtonSet",
+								link: "/components/MButtonSet/features",
+								items: [
+									{
+										text: "API",
+										link: "/components/MButtonSet/api",
+									},
+									{
+										text: "Theming",
+										link: "/components/MButtonSet/theming",
+									},
+								],
+							},
 						],
 					},
 				],

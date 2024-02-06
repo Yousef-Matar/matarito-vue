@@ -4,7 +4,7 @@ search: false
 
 ## Accessibility
 
-MButton component renders a native button element that implicitly includes any passed prop.
+`MButton` component renders a native button element that implicitly includes any passed prop.
 
 ### Title
 
@@ -19,7 +19,7 @@ MButton component renders a native button element that implicitly includes any p
 
 ### Screen Reader
 
-Text to describe the button is defined with the `aria-label` prop, if not present `label` prop is used as the value. If the button is icon only or custom templating is used, it is recommended to use `aria-label` so that screen readers would be able to read the element properly.
+Text to describe `MButton` is defined with the `aria-label` prop, if not present `label` prop is used as the value. If the `MButton` is icon only or custom templating is used, it is recommended to use `aria-label` so that screen readers would be able to read the element properly.
 
 ```vue
 <template>
@@ -35,10 +35,10 @@ Text to describe the button is defined with the `aria-label` prop, if not presen
 
 <div class="full-width d-table">
 
-|   Key   |          Function          |
-| :-----: | :------------------------: |
-|  `Tab`  | Moves focus to the button. |
-| `Space` |   Activates the button.    |
-| `Enter` |   Activates the button.    |
+|   Key   |           Function            |
+| :-----: | :---------------------------: |
+|  `Tab`  | Moves focus to the `MButton`. |
+| `Space` |   Activates the `MButton`.    |
+| `Enter` |   Activates the `MButton`.    |
 
 </div>

@@ -8,9 +8,7 @@ outline: deep
 
 # MButton
 
-Buttons allow users to take actions, and make choices, with a single tap.
-
-By default, `MButton` capitalizes the first letter of it label.
+`MButton` allow users to take actions, and make choices, with a single tap.
 
 <!--@include: ./snippets/import.md-->
 <!--@include: ./snippets/usage.md-->
@@ -22,7 +20,6 @@ By default, `MButton` capitalizes the first letter of it label.
 <!--@include: ./snippets/demo/loading.md-->
 <!--@include: ./snippets/demo/raised.md-->
 <!--@include: ./snippets/demo/icons-only.md-->
-<!--@include: ./snippets/demo/button-set.md-->
 <!--@include: ./snippets/demo/sizes.md-->
 <!--@include: ./snippets/events.md-->
 <!--@include: ./snippets/accessibility.md-->

@@ -4,7 +4,7 @@ search: false
 
 ## Severity
 
-Severity defines the type of button.
+Severity defines the type of `MButton`.
 
 The `MButton` comes in seven `severity`: primary (default), secondary, success, info, warning, help and danger.
 

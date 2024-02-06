@@ -4,7 +4,7 @@ prev: "Features"
 
 # MButton API
 
-API defines helper props, events and others for the matarito MButton module.
+API defines props, events and others for the matarito `MButton` module.
 
 ## MButton
 
@@ -12,41 +12,41 @@ API defines helper props, events and others for the matarito MButton module.
 
 ::: tip Note that
 
-Props of the default `html button` are also available.
+Props of the `native html button` are also available.
 
 :::
 
 ## Props
 
-Defines valid properties in MButton component.
+Defines valid properties in `MButton` component.
 
-|      Name      |                                                        Type                                                         |                    Default                     |                 Description                 |
-| :------------: | :-----------------------------------------------------------------------------------------------------------------: | :--------------------------------------------: | :-----------------------------------------: |
-|    `label`     |                                       <span class="text--green">String</span>                                       |     <span class="VPBadge tip">null</span>      |             Text of the button.             |
-|     `icon`     |                                       <span class="text--green">String</span>                                       |     <span class="VPBadge tip">null</span>      |              Name of the icon.              |
-| `iconPosition` |                                 <span class="text--green">"left" \| "right"</span>                                  |     <span class="VPBadge tip">left</span>      |            Position of the icon.            |
-|   `variant`    |                          <span class="text--green">"filled" \| "text" \| "outlined"</span>                          |    <span class="VPBadge tip">filled</span>     |    Defines the importance of the button.    |
-|   `rounded`    |                                      <span class="text--green">boolean</span>                                       |     <span class="VPBadge tip">false</span>     | Add a circular border radius to the button. |
-|   `severity`   | <span class="text--green">"primary" \| "secondary" \| "success" \| "info" \| "warning" \| "help" \| "danger"</span> |    <span class="VPBadge tip">primary</span>    |      Defines the style of the button.       |
-|   `loading`    |                                      <span class="text--green">boolean</span>                                       |     <span class="VPBadge tip">false</span>     |   Whether the button is in loading state.   |
-| `loadingIcon`  |                                       <span class="text--green">String</span>                                       | <span class="VPBadge tip">pi pi-spinner</span> |      Icon to display in loading state.      |
-|    `raised`    |                                      <span class="text--green">boolean</span>                                       |     <span class="VPBadge tip">false</span>     |     Add a shadow to indicate elevation.     |
-|     `size`     |                                <span class="text--green">"sm" \| "md" \| "lg"</span>                                |      <span class="VPBadge tip">md</span>       |       Defines the size of the button.       |
+|      Name      |                                                        Type                                                         |                    Default                     |                  Description                   |
+| :------------: | :-----------------------------------------------------------------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+|    `label`     |                                       <span class="text--green">String</span>                                       |     <span class="VPBadge tip">null</span>      |             Text of the `MButton`.             |
+|     `icon`     |                                       <span class="text--green">String</span>                                       |     <span class="VPBadge tip">null</span>      |               Name of the icon.                |
+| `iconPosition` |                                 <span class="text--green">"left" \| "right"</span>                                  |     <span class="VPBadge tip">left</span>      |             Position of the icon.              |
+|   `variant`    |                          <span class="text--green">"filled" \| "text" \| "outlined"</span>                          |    <span class="VPBadge tip">filled</span>     |    Defines the importance of the `MButton`.    |
+|   `rounded`    |                                      <span class="text--green">boolean</span>                                       |     <span class="VPBadge tip">false</span>     | Add a circular border radius to the `MButton`. |
+|   `severity`   | <span class="text--green">"primary" \| "secondary" \| "success" \| "info" \| "warning" \| "help" \| "danger"</span> |    <span class="VPBadge tip">primary</span>    |      Defines the type of the `MButton`.       |
+|   `loading`    |                                      <span class="text--green">boolean</span>                                       |     <span class="VPBadge tip">false</span>     |   Whether the `MButton` is in loading state.   |
+| `loadingIcon`  |                                       <span class="text--green">String</span>                                       | <span class="VPBadge tip">pi pi-spinner</span> |       Icon to display in loading state.        |
+|    `raised`    |                                      <span class="text--green">boolean</span>                                       |     <span class="VPBadge tip">false</span>     |      Add a shadow to indicate elevation.       |
+|     `size`     |                                <span class="text--green">"sm" \| "md" \| "lg"</span>                                |      <span class="VPBadge tip">md</span>       |       Defines the size of the `MButton`.       |
 
 ## Slots
 
-Defines valid slots in MButton component.
+Defines valid slots in `MButton` component.
 
-|   Name    | Parameters |                                    ReturnType                                    |                                                            Description                                                            |
-| :-------: | :--------: | :------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: |
-| `default` |            | <span class="VPBadge info">VNode<RendererNode, RendererElement, Object>[]</span> | Custom content can be placed inside the button via the default slot. Note that when slot is used, label property is not included. |
+|   Name    | Parameters |                                    ReturnType                                    |                                                           Description                                                            |
+| :-------: | :--------: | :------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: |
+| `default` |            | <span class="VPBadge info">VNode<RendererNode, RendererElement, Object>[]</span> | Custom content can be placed inside `MButton` via the default slot. Note that when slot is used, label property is not included. |
 
 ## ButtonContext
 
-Extended properties from native button.
+Extended properties from the native html button.
 
-|    Name     |                               Type                               |                 Default                 |                     Description                     |
-| :---------: | :--------------------------------------------------------------: | :-------------------------------------: | :-------------------------------------------------: |
-| `disabled`  |             <span class="text--green">boolean</span>             | <span class="VPBadge tip">false</span>  | Current disabled state of the element as a boolean. |
-| `propagate` |             <span class="text--green">boolean</span>             | <span class="VPBadge tip">false</span>  | Whether the button click event propagate to parent. |
-|   `type`    | <span class="text--green">"button" \| "submit" \| "reset"</span> | <span class="VPBadge tip">button</span> |           Defines the type of the button.           |
+|    Name     |                               Type                               |                 Default                 |                    Description                     |
+| :---------: | :--------------------------------------------------------------: | :-------------------------------------: | :------------------------------------------------: |
+| `disabled`  |             <span class="text--green">boolean</span>             | <span class="VPBadge tip">false</span>  |        Current disabled state of `MButton`.        |
+| `propagate` |             <span class="text--green">boolean</span>             | <span class="VPBadge tip">false</span>  | Whether `MButton` click event propagate to parent. |
+|   `type`    | <span class="text--green">"button" \| "submit" \| "reset"</span> | <span class="VPBadge tip">button</span> |         Defines the type of the `MButton`.         |

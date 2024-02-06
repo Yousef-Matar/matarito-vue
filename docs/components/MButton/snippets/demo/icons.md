@@ -4,7 +4,7 @@ search: false
 
 ## Icons
 
-Icon of a button is specified with `icon` property and position is configured using `iconPosition` attribute.
+Icon of the `MButton` is specified with `icon` property and position is configured using `iconPosition` attribute.
 
 <DemoContainer>
 		<MButton icon="pi pi-check" />

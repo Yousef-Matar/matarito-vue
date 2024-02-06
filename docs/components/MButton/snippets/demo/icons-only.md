@@ -4,7 +4,7 @@ search: false
 
 ## Icon only
 
-MButton can have icons without labels.
+`MButton` can have icons without labels.
 
 <DemoContainer>
 <!-- Filled Buttons -->

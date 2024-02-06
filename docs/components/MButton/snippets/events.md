@@ -6,7 +6,7 @@ search: false
 
 ::: info OnClick
 
-By default the `MButton` stops event propagation.
+By default `MButton` stops event propagation.
 
 When `propagate` is present, the event propagates normally.
 

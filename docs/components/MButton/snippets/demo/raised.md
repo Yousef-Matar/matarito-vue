@@ -4,7 +4,7 @@ search: false
 
 ## Raised
 
-When `raised` is present, buttons have a shadow to indicate elevation.
+When `raised` is present, `MButton` has a shadow to indicate elevation.
 
 <DemoContainer>
 	<MButton label="Primary" raised />

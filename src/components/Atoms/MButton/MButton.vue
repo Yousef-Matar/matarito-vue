@@ -112,6 +112,9 @@ const clickHandler = (event: MouseEvent) => (!props.propagate ? event.stopPropag
 	text-align: center;
 	// Text
 	&__label {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		flex-grow: 1;
 		&:first-letter {
 			text-transform: capitalize;
@@ -178,23 +181,6 @@ const clickHandler = (event: MouseEvent) => (!props.propagate ? event.stopPropag
 	&--lg.m-button--icon-only {
 		width: var(--m-button-lg-size, var(--lg-size));
 		height: var(--m-button-lg-size, var(--lg-size));
-	}
-}
-.m-button-set {
-	& .m-button {
-		position: relative;
-		border-radius: 0;
-		&:enabled:focus {
-			z-index: 1;
-		}
-		&:first-child {
-			border-top-left-radius: var(--m-button-border-radius, var(--border-radius));
-			border-bottom-left-radius: var(--m-button-border-radius, var(--border-radius));
-		}
-		&:last-child {
-			border-top-right-radius: var(--m-button-border-radius, var(--border-radius));
-			border-bottom-right-radius: var(--m-button-border-radius, var(--border-radius));
-		}
 	}
 }
 @include generateVariants(m-button);
