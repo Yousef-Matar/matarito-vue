@@ -11,9 +11,6 @@
 	:root {
 		@each $propertyName, $value in meta.module-variables("severities") {
 			--#{$propertyName}: #{$value};
-			--#{$propertyName}-filled-hover: #{darken($value, 10%)};
-			--#{$propertyName}-text-hover: #{rgba($value, 0.2)};
-			--#{$propertyName}-outlined-hover: #{rgba($value, 0.2)};
 		}
 		@each $propertyName, $value in meta.module-variables("colors") {
 			--#{$propertyName}: #{$value};
@@ -66,5 +63,12 @@
 		// 	}
 		// } @else {
 		// }
+	}
+	:root {
+		@each $propertyName, $value in meta.module-variables("severities") {
+			--#{$propertyName}-filled-hover: #{darken($value, 10%)};
+			--#{$propertyName}-text-hover: #{rgba($value, 0.2)};
+			--#{$propertyName}-outlined-hover: #{rgba($value, 0.2)};
+		}
 	}
 }
