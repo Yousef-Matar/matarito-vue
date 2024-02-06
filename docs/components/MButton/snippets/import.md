@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 ## Single module import
 
 ::: code-group

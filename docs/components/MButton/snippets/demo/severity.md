@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 ## Severity
 
 Severity defines the type of button.

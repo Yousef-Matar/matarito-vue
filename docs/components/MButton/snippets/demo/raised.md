@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 ## Raised
 
 When `raised` is present, buttons have a shadow to indicate elevation.

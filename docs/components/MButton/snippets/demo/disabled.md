@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 ## Disabled
 
 When `disabled` is present, the element cannot be focused and cursor is not allowed.

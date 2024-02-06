@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 ## Icon only
 
 MButton can have icons without labels.

@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 ## Accessibility
 
 MButton component renders a native button element that implicitly includes any passed prop.

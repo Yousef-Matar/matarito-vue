@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 ## Sizes
 
 For larger or smaller buttons, use the `size` property. The `MButton` comes in three `sizes`: sm, md (default) and lg.

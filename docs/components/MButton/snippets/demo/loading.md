@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 ## Loading
 
 When `loading` is present only the loading icon will appear, the element cannot be focused and cursor is loading. The icon spinning animation is handled automatically.

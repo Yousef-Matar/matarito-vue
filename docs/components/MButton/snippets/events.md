@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 ## Events
 
 ::: info OnClick

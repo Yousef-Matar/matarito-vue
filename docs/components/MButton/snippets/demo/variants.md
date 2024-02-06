@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 ## Variants
 
 The `MButton` comes in three `variants`: filled (default), text, and outlined.

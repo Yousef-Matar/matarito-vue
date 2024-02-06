@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 ## Button Set
 
 Multiple buttons are grouped when wrapped inside an element with `m-button-set` class.
