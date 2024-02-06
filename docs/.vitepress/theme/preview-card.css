@@ -1,0 +1,53 @@
+.preview-container {
+  display: grid;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1rem 0;
+}
+.preview-card {
+  cursor: pointer;
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.preview-card-content {
+  flex-grow: 1;
+  position: relative;
+  transition: border-color 0.25s;
+  background-color: var(--vp-code-block-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--vp-c-divider);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.card-overlay {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+}
+.preview-card-label {
+  position: relative;
+  transition: border-color 0.25s;
+  border-left: 1px solid var(--vp-c-divider);
+  border-right: 1px solid var(--vp-c-divider);
+  border-bottom: 1px solid var(--vp-c-divider);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 1rem 0.5rem;
+}
+.preview-card:hover .preview-card-label {
+  border-color: var(--vp-c-brand-1);
+}
+.preview-card:hover .preview-card-content {
+  border-top-color: var(--vp-c-brand-1);
+  border-left-color: var(--vp-c-brand-1);
+  border-right-color: var(--vp-c-brand-1);
+}
