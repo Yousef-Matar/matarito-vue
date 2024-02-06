@@ -5,6 +5,7 @@ export default defineConfig({
 	base: "/matarito-vue/",
 	title: "Matarito-vue",
 	description: "A VitePress Site",
+	cleanUrls: true,
 	themeConfig: {
 		sidebar: [
 			{
