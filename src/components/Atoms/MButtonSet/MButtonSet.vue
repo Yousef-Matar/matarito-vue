@@ -18,7 +18,7 @@ const props = defineProps({
 	rounded: Boolean,
 	propagate: Boolean,
 	label: { type: String, default: null },
-	loadingIcon: { type: String, default: "pi pi-spinner" },
+	loadingIcon: { type: String, default: null },
 	icon: { type: String, default: null },
 	type: {
 		type: String as PropType<ButtonHTMLAttributes["type"]>,
