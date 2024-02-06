@@ -1,4 +1,4 @@
-<details>
+<details class="custom-block collapse details">
 <summary class="collapsible-header">
 	
 ### Success

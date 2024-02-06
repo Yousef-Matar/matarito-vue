@@ -45,6 +45,10 @@ export default defineConfig({
 					},
 				],
 			},
+			{
+				text: "Theming",
+				link: "/theming/theming",
+			}
 		],
 		search: {
 			provider: "local",

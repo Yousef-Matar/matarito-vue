@@ -1,7 +1,8 @@
 .collapsible-header {
   cursor: pointer;
 }
-.collapsible-header h3 {
+.collapsible-header h3,
+.collapsible-header h4 {
   display: inline;
 }
 .collapsible-header:first-letter {
@@ -30,4 +31,7 @@ pre {
 }
 .text--green {
   color: var(--vp-code-line-diff-add-symbol-color);
+}
+.custom-block.collapse {
+  margin: 8px 0;
 }

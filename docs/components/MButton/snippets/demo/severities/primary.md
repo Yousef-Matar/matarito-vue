@@ -1,4 +1,4 @@
-<details open>
+<details class="custom-block collapse details" open>
 <summary class="collapsible-header">
 
 ### Primary
