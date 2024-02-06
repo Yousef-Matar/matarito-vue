@@ -26,11 +26,11 @@ export default defineConfig({
 					},
 					{
 						text: "Button",
-						collapsed: true,
 						items: [
 							{
 								text: "MButton",
 								link: "/components/MButton/features",
+								collapsed: true,
 								items: [
 									{
 										text: "API",
@@ -45,6 +45,7 @@ export default defineConfig({
 							{
 								text: "MButtonSet",
 								link: "/components/MButtonSet/features",
+								collapsed: true,
 								items: [
 									{
 										text: "API",

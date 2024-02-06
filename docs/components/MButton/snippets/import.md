@@ -2,7 +2,7 @@
 search: false
 ---
 
-## Single module import
+## Module import
 
 ::: code-group
 

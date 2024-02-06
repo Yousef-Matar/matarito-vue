@@ -2,21 +2,23 @@
 search: false
 ---
 
-## Single module import
+## Module import
+
+`MButtonSet` component is dependent on `MButton`.
 
 ::: code-group
 
 ```vue [Composition API]
 <script setup>
-import { MButtonSet } from "matarito-vue";
+import { MButtonSet, MButton } from "matarito-vue";
 </script>
 ```
 
 ```vue [Options API]
 <script>
-import { MButtonSet } from "matarito-vue";
+import { MButtonSet, MButton } from "matarito-vue";
 export default {
-	components: { MButtonSet }
+	components: { MButtonSet, MButton }
 };
 </script>
 ```

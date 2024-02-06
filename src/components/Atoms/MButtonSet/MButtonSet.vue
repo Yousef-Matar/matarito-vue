@@ -65,11 +65,11 @@ const buttonSetClass = computed(() => {
 	&--row {
 		flex-direction: row;
 		& > .m-button {
-			&:first-child {
+			&:not(.m-button--rounded):first-child {
 				border-top-left-radius: var(--m-button-border-radius, var(--border-radius));
 				border-bottom-left-radius: var(--m-button-border-radius, var(--border-radius));
 			}
-			&:last-child {
+			&:not(.m-button--rounded):last-child {
 				border-top-right-radius: var(--m-button-border-radius, var(--border-radius));
 				border-bottom-right-radius: var(--m-button-border-radius, var(--border-radius));
 			}
