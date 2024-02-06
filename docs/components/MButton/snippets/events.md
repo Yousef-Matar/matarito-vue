@@ -12,18 +12,8 @@ When `propagate` is present, the event propagates normally.
 
 :::
 
-::: code-group
-
-```vue [Composition API]
+```vue
 <template>
 	<MButton label="Submit" propagate />
 </template>
 ```
-
-```vue [Options API]
-<template>
-	<MButton label="Submit" propagate />
-</template>
-```
-
-:::

@@ -14,9 +14,7 @@ Multiple buttons are grouped when wrapped inside an element with `m-button-set` 
    </div>
 </DemoContainer>
 
-::: code-group
-
-```vue [Composition API]
+```vue
 <template>
 	<div class="m-button-set">
 		<MButton label="Save" />
@@ -25,15 +23,3 @@ Multiple buttons are grouped when wrapped inside an element with `m-button-set` 
 	</div>
 </template>
 ```
-
-```vue [Options API]
-<template>
-	<div class="m-button-set">
-		<MButton label="Save" />
-		<MButton label="Delete" />
-		<MButton label="Cancel" />
-	</div>
-</template>
-```
-
-:::

@@ -12,22 +12,10 @@ For larger or smaller buttons, use the `size` property. The `MButton` comes in t
 	<MButton label="Large" size="lg" />
 </DemoContainer>
 
-::: code-group
-
-```vue [Composition API]
+```vue
 <template>
 	<MButton label="Small" size="sm" />
 	<MButton label="Medium" />
 	<MButton label="Large" size="lg" />
 </template>
 ```
-
-```vue [Options API]
-<template>
-	<MButton label="Small" size="sm" />
-	<MButton label="Medium" />
-	<MButton label="Large" size="lg" />
-</template>
-```
-
-:::

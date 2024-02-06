@@ -11,20 +11,9 @@ Text to display on a button is defined with the `label` property or the `predefi
 		<MButton>Submit </MButton>
 </DemoContainer>
 
-::: code-group
-
-```vue [Composition API]
+```vue
 <template>
 	<MButton label="Submit" />
 	<MButton>Submit</MButton>
 </template>
 ```
-
-```vue [Options API]
-<template>
-	<MButton label="Submit" />
-	<MButton>Submit</MButton>
-</template>
-```
-
-:::

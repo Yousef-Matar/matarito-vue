@@ -17,9 +17,7 @@ search: false
 	<MButton label="Danger" variant="outlined" severity="danger" rounded />
 </DemoContainer>
 
-::: code-group
-
-```vue [Composition API]
+```vue
 <template>
 	<MButton label="Danger" severity="danger" />
 	<MButton label="Danger" variant="text" severity="danger" />
@@ -29,18 +27,5 @@ search: false
 	<MButton label="Danger" variant="outlined" severity="danger" rounded />
 </template>
 ```
-
-```vue [Options API]
-<template>
-	<MButton label="Danger" severity="danger" />
-	<MButton label="Danger" variant="text" severity="danger" />
-	<MButton label="Danger" variant="outlined" severity="danger" />
-	<MButton label="Danger" severity="danger" rounded />
-	<MButton label="Danger" variant="text" severity="danger" rounded />
-	<MButton label="Danger" variant="outlined" severity="danger" rounded />
-</template>
-```
-
-:::
 
 </details>

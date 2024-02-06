@@ -21,9 +21,7 @@ The `MButton` can also be rounded using `rounded` property.
 	<MButton label="outlined-rounded" variant="outlined" rounded/>
 </DemoContainer>
 
-::: code-group
-
-```vue [Composition API]
+```vue
 <template>
 	<MButton label="Filled" />
 	<MButton label="Text" variant="text" />
@@ -33,16 +31,3 @@ The `MButton` can also be rounded using `rounded` property.
 	<MButton label="outlined-rounded" variant="outlined" rounded />
 </template>
 ```
-
-```vue [Options API]
-<template>
-	<MButton label="Filled" />
-	<MButton label="Text" variant="text" />
-	<MButton label="outlined" variant="outlined" />
-	<MButton label="Filled-rounded" rounded />
-	<MButton label="Text-rounded" variant="text" rounded />
-	<MButton label="outlined-rounded" variant="outlined" rounded />
-</template>
-```
-
-:::
