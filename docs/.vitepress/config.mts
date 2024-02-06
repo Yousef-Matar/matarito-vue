@@ -25,11 +25,11 @@ export default defineConfig({
 					},
 					{
 						text: "Button",
+						collapsed: true,
 						items: [
 							{
 								text: "MButton",
 								link: "/components/MButton/features",
-								collapsed: true,
 								items: [
 									{
 										text: "API",
@@ -48,7 +48,7 @@ export default defineConfig({
 			{
 				text: "Theming",
 				link: "/theming/theming",
-			}
+			},
 		],
 		search: {
 			provider: "local",
@@ -65,22 +65,22 @@ export default defineConfig({
 			},
 		],
 	},
-  vite: {
-    resolve: {
-      alias: {
-        'matarito-vue': resolve(__dirname, '../../src'),
-      },
-    },
-	 css: {
-		preprocessorOptions: {
-			scss: {
-				additionalData: `
+	vite: {
+		resolve: {
+			alias: {
+				"matarito-vue": resolve(__dirname, "../../src"),
+			},
+		},
+		css: {
+			preprocessorOptions: {
+				scss: {
+					additionalData: `
 				@use "sass:meta";
 				@use "matarito-vue/assets/scss/variables/severities";
 				@import "matarito-vue/assets/scss/global";
-				`
-			}
-		}
-	}
-  }
+				`,
+				},
+			},
+		},
+	},
 });
