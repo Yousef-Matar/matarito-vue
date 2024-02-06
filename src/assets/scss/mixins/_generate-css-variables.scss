@@ -9,19 +9,13 @@
 @use "../variables/box-shadows";
 @mixin generateCssVariables($base: "") {
 	:root {
-		@each $propertyName, $value in meta.module-variables("severities") {
-			--#{$propertyName}: #{$value};
-		}
 		@each $propertyName, $value in meta.module-variables("colors") {
 			--#{$propertyName}: #{$value};
 		}
-		@each $propertyName, $value in meta.module-variables("opacities") {
+		@each $propertyName, $value in meta.module-variables("typography") {
 			--#{$propertyName}: #{$value};
 		}
 		@each $propertyName, $value in meta.module-variables("paddings") {
-			--#{$propertyName}: #{$value};
-		}
-		@each $propertyName, $value in meta.module-variables("typography") {
 			--#{$propertyName}: #{$value};
 		}
 		@each $propertyName, $value in meta.module-variables("sizes") {
@@ -31,6 +25,12 @@
 			--#{$propertyName}: #{$value};
 		}
 		@each $propertyName, $value in meta.module-variables("box-shadows") {
+			--#{$propertyName}: #{$value};
+		}
+		@each $propertyName, $value in meta.module-variables("opacities") {
+			--#{$propertyName}: #{$value};
+		}
+		@each $propertyName, $value in meta.module-variables("severities") {
 			--#{$propertyName}: #{$value};
 		}
 		// @if $base != "" {
