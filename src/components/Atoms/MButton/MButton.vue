@@ -6,7 +6,8 @@
 		:title="buttonAccessability"
 		:aria-label="buttonAccessability"
 		:aria-labelledby="buttonAccessability"
-		@click="(event) => clickHandler(event)">
+		@click="(event) => clickHandler(event)"
+		v-ripple>
 		<i
 			v-if="loading && loadingIcon"
 			:class="loadingIconClass" />
@@ -27,7 +28,8 @@
 <script setup lang="ts">
 import { computed, useSlots } from "vue";
 import type { ButtonHTMLAttributes, PropType } from "vue";
-
+import Ripple from "../../Directives/Ripple/ripple";
+const vRipple = Ripple;
 const props = defineProps({
 	disabled: Boolean,
 	loading: Boolean,
