@@ -28,7 +28,7 @@
 <script setup lang="ts">
 import { computed, useSlots } from "vue";
 import type { ButtonHTMLAttributes, PropType } from "vue";
-import Ripple from "../../Directives/Ripple/ripple";
+import Ripple from "../../../directives/Ripple/ripple";
 const vRipple = Ripple;
 const props = defineProps({
 	disabled: Boolean,

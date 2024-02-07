@@ -1,0 +1,20 @@
+@keyframes ripple {
+	to {
+		transform: scale(3);
+		opacity: 0;
+	}
+}
+:root {
+	--m-ripple-bg: rgba(255, 255, 255, 0.6);
+}
+.m-ripple {
+	position: relative;
+	overflow: hidden;
+	& &__ink {
+		position: absolute;
+		border-radius: 50%;
+		transform: scale(0);
+		animation: ripple 400ms linear;
+		background-color: var(--m-ripple-bg, rgba(255, 255, 255, 0.6));
+	}
+}

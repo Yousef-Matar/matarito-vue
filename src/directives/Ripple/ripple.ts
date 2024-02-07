@@ -1,8 +1,8 @@
-import "./ripple.css";
+import "./ripple.scss";
 const ripple = (element: HTMLElement, clickEvent: MouseEvent) => {
 	const diameter = Math.max(element.clientWidth, element.clientHeight);
 	const radius = diameter / 2;
-	const ripple = element.getElementsByClassName("ripple")[0];
+	const ripple = element.getElementsByClassName("m-ripple__ink")[0];
 	const newRipple = document.createElement("span");
 	let timeoutHandler = setTimeout(() => newRipple.remove(), 600);
 	if (ripple) {
@@ -15,7 +15,7 @@ const ripple = (element: HTMLElement, clickEvent: MouseEvent) => {
 	newRipple.style.width = newRipple.style.height = `${diameter}px`;
 	newRipple.style.left = clickEvent.clientX ? `${left}px` : `calc(50% - ${diameter / 2}px)`;
 	newRipple.style.top = clickEvent.clientY ? `${top}px` : `calc(50% - ${diameter / 2}px)`;
-	newRipple.classList.add("ripple");
+	newRipple.classList.add("m-ripple__ink");
 	element.classList.add("m-ripple");
 	element.appendChild(newRipple);
 	timeoutHandler = setTimeout(() => newRipple.remove(), 600);

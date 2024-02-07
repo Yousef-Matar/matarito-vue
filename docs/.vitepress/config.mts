@@ -63,6 +63,27 @@ export default defineConfig({
 				],
 			},
 			{
+				text: "Directives",
+				collapsed: true,
+				items: [
+					{
+						text: "Ripple",
+						link: "/directives/Ripple/features",
+						collapsed: true,
+						items: [
+							{
+								text: "API",
+								link: "/directives/Ripple/api",
+							},
+							{
+								text: "Theming",
+								link: "/directives/Ripple/theming",
+							},
+						],
+					},
+				],
+			},
+			{
 				text: "Theming",
 				link: "/theming/theming",
 			},
