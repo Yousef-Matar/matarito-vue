@@ -7,7 +7,7 @@ Learn the basics of working with Matarito-vue components.
 After [installation](installation), to use Matarito-vue in your application you have these two approaches:
 
 - **Library import**: You can import Matarito-vue as a whole, Which would make all components globally available in your application
-- **Modular imports**: Each component module can be imported and registered individually so that you only bundle what you use. Import path is available in the documentation of the corresponding component.
+- **Component imports**: Each component can be imported and registered individually so that you only bundle what you use. Import path is available in the documentation of the corresponding component.
 
 ::: code-group
 
@@ -15,7 +15,7 @@ After [installation](installation), to use Matarito-vue in your application you 
 Missing
 ```
 
-```vue [Modular imports]
+```vue [Component imports]
 <script>
 import { MButton } from "matarito-vue";
 export default {

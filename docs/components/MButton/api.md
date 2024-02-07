@@ -4,7 +4,7 @@ prev: "Features"
 
 # MButton API
 
-API defines props, events and others for the matarito `MButton` module.
+API defines props, events and others for the `MButton` component.
 
 ## MButton
 
