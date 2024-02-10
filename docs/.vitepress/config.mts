@@ -26,13 +26,16 @@ export default defineConfig({
 						link: "/components/all-components",
 					},
 					{
-						text: "Button",
+						text: "Buttons",
 						items: [
 							{
 								text: "MButton",
-								link: "/components/MButton/features",
 								collapsed: true,
 								items: [
+									{
+										text: "Features",
+										link: "/components/MButton/features",
+									},
 									{
 										text: "API",
 										link: "/components/MButton/api",
@@ -45,9 +48,12 @@ export default defineConfig({
 							},
 							{
 								text: "MButtonSet",
-								link: "/components/MButtonSet/features",
 								collapsed: true,
 								items: [
+									{
+										text: "Features",
+										link: "/components/MButtonSet/features",
+									},
 									{
 										text: "API",
 										link: "/components/MButtonSet/api",
@@ -68,9 +74,11 @@ export default defineConfig({
 				items: [
 					{
 						text: "Ripple",
-						link: "/directives/Ripple/features",
-						collapsed: true,
 						items: [
+							{
+								text: "Features",
+								link: "/directives/Ripple/features",
+							},
 							{
 								text: "API",
 								link: "/directives/Ripple/api",

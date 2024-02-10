@@ -15,8 +15,8 @@
   display: table;
 }
 
-.vp-doc .d-table tbody tr td:first-child {
-  white-space: nowrap;
+.vp-doc .d-table tbody tr td {
+  padding: 4px;
 }
 pre {
   max-height: 600px;

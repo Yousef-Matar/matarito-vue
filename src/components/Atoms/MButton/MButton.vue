@@ -101,6 +101,7 @@ const clickHandler = (event: MouseEvent) => (!props.propagate ? event.stopPropag
 </script>
 <style lang="scss">
 .m-button {
+	-webkit-tap-highlight-color: transparent;
 	// Base class for button
 	transition-property: all;
 	transition-timing-function: linear;
