@@ -2,7 +2,7 @@
 search: false
 ---
 
-## Basic
+## Usage
 
 `Ripple` can be used on any element, which has its css position set. For example <span class="VPBadge tip">relative</span>
 

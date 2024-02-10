@@ -4,7 +4,7 @@ search: false
 
 ## Module import
 
-`MButtonSet` component is dependent on `MButton`.
+`MButtonSet` is dependent on `MButton` component.
 
 ::: code-group
 

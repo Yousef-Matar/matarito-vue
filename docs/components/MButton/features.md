@@ -10,6 +10,8 @@ outline: deep
 
 `MButton` allow users to take actions, and make choices, with a single tap.
 
+`MButtons` can be grouped by wrapping them with the [`MButtonSet`](../MButtonSet/features) component.
+
 <!--@include: ./snippets/import.md-->
 <!--@include: ./snippets/usage.md-->
 <!--@include: ./snippets/demo/basic.md-->

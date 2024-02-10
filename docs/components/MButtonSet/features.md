@@ -6,8 +6,6 @@
 
 The `MButtonSet` component can be used to group related [`MButtons`](../MButton/features).
 
-The `MButton` can be grouped by wrapping them with the `MButtonSet` component.
-
 ::: warning
 
 The `MButton components` need to be immediate children.
