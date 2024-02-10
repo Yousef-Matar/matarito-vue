@@ -10,6 +10,7 @@
 .m-ripple {
 	position: relative;
 	overflow: hidden;
+	cursor: pointer;
 	& &__ink {
 		position: absolute;
 		border-radius: 50%;
