@@ -16,9 +16,9 @@ List of element class selectors.
 
 <div class="full-width d-table">
 
-|                       Name                       |    Element     |
-| :----------------------------------------------: | :------------: |
-|    <span class="text--green">m-ripple</span>     |  Host element  |
-| <span class="text--green">m-ripple\_\_ink</span> | Ripple element |
+|                       Name                       |     Element     |
+| :----------------------------------------------: | :-------------: |
+|    <span class="text--green">m-ripple</span>     |  Host element.  |
+| <span class="text--green">m-ripple\_\_ink</span> | Ripple element. |
 
 </div>

@@ -1,7 +1,3 @@
----
-prev: "Features"
----
-
 # MButton API
 
 API defines props, events and others for the `MButton` component.
@@ -20,6 +16,8 @@ Props of the `native html button` are also available.
 
 Defines valid properties in `MButton` component.
 
+<div class="full-width d-table">
+
 |      Name      |                                                        Type                                                         |                 Default                  |                  Description                   |
 | :------------: | :-----------------------------------------------------------------------------------------------------------------: | :--------------------------------------: | :--------------------------------------------: |
 |    `label`     |                                       <span class="text--green">String</span>                                       |  <span class="VPBadge tip">null</span>   |             Text of the `MButton`.             |
@@ -33,20 +31,30 @@ Defines valid properties in `MButton` component.
 |    `raised`    |                                      <span class="text--green">boolean</span>                                       |  <span class="VPBadge tip">false</span>  |      Add a shadow to indicate elevation.       |
 |     `size`     |                                <span class="text--green">"sm" \| "md" \| "lg"</span>                                |   <span class="VPBadge tip">md</span>    |       Defines the size of the `MButton`.       |
 
+</div>
+
 ## Slots
 
 Defines valid slots in `MButton` component.
+
+<div class="full-width d-table">
 
 |   Name    | Parameters |                                    ReturnType                                    |                                                           Description                                                            |
 | :-------: | :--------: | :------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: |
 | `default` |            | <span class="VPBadge info">VNode<RendererNode, RendererElement, Object>[]</span> | Custom content can be placed inside `MButton` via the default slot. Note that when slot is used, label property is not included. |
 
+</div>
+
 ## ButtonContext
 
 Extended properties from the native html button.
+
+<div class="full-width d-table">
 
 |    Name     |                               Type                               |                 Default                 |                    Description                     |
 | :---------: | :--------------------------------------------------------------: | :-------------------------------------: | :------------------------------------------------: |
 | `disabled`  |             <span class="text--green">boolean</span>             | <span class="VPBadge tip">false</span>  |        Current disabled state of `MButton`.        |
 | `propagate` |             <span class="text--green">boolean</span>             | <span class="VPBadge tip">false</span>  | Whether `MButton` click event propagate to parent. |
 |   `type`    | <span class="text--green">"button" \| "submit" \| "reset"</span> | <span class="VPBadge tip">button</span> |         Defines the type of the `MButton`.         |
+
+</div>

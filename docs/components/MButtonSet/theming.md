@@ -6,9 +6,9 @@ List of element class selectors.
 
 <div class="full-width d-table">
 
-|                     Name                      |           Element            |
-| :-------------------------------------------: | :--------------------------: |
-| <span class="text--green">m-button-set</span> | `MButtonSet` wrapper element |
+|                     Name                      |            Element            |
+| :-------------------------------------------: | :---------------------------: |
+| <span class="text--green">m-button-set</span> | `MButtonSet` wrapper element. |
 
 </div>
 

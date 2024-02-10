@@ -12,3 +12,14 @@
   width: 100%;
   justify-content: center;
 }
+.ripple {
+  border-radius: var(--border-radius);
+  position: relative;
+  padding: 1rem;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
