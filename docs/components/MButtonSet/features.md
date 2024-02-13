@@ -1,6 +1,4 @@
-<script setup>
-   import { MButtonSet } from "matarito-vue";
-</script>
+
 
 # MButtonSet
 

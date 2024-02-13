@@ -2,10 +2,6 @@
 outline: deep
 ---
 
-<script setup>
-   import { MButton } from "matarito-vue";
-</script>
-
 # MButton
 
 `MButton` allow users to take actions, and make choices, with a single tap.

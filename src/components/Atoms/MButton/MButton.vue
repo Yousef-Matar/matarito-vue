@@ -36,6 +36,7 @@ const props = defineProps({
 	raised: Boolean,
 	rounded: Boolean,
 	propagate: Boolean,
+	ripple: Boolean,
 	label: { type: String, default: null },
 	loadingIcon: { type: String, default: null },
 	icon: { type: String, default: null },

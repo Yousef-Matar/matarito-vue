@@ -1,4 +1,4 @@
-import type { DirectiveBinding } from "vue";
+import type { DirectiveBinding, VNode } from "vue";
 import "./ripple.scss";
 interface iRippleProps {
 	color: string;
@@ -25,12 +25,15 @@ const ripple = (element: HTMLElement, clickEvent: MouseEvent, props: iRippleProp
 	newRipple.style.left = clickEvent.clientX ? `${left}px` : `calc(50% - ${diameter / 2}px)`;
 	newRipple.style.top = clickEvent.clientY ? `${top}px` : `calc(50% - ${diameter / 2}px)`;
 	newRipple.classList.add("m-ripple__ink");
-	element.classList.add("m-ripple");
 	element.appendChild(newRipple);
 };
 export default {
-	mounted: (element: HTMLElement, props: DirectiveBinding) => {
-		element.onclick = (event) => ripple(element, event, props.value);
+	mounted: (element: HTMLElement, props: DirectiveBinding, vNode: VNode) => {
+		const vueComponent = vNode?.el?.__vueParentComponent;
+		if (vueComponent.appContext.config.globalProperties.$matarito.ripple || vueComponent.props.ripple) {
+			element.classList.add("m-ripple");
+			element.onclick = (event) => ripple(element, event, props.value);
+		}
 	},
 	unmounted: (element: HTMLElement) => {
 		element.onclick = null;
