@@ -13,8 +13,14 @@ export default defineConfig({
 				collapsed: false,
 				items: [
 					{ text: "Overview", link: "/guide/overview" },
-					{ text: "Installation", link: "/guide/installation" },
-					{ text: "Usage", link: "/guide/usage" },
+					{ text: "Installation", link: "/guide/installation" }
+				],
+			},
+			{
+				text: "Configuration",
+				collapsed: true,
+				items: [
+					{ text: "Options", link: "/configuration/options" },
 				],
 			},
 			{
