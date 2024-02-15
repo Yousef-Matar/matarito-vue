@@ -1,9 +1,10 @@
 interface iConfig {
 	ripple: boolean;
-	// modular: boolean;
+	autoImport: boolean;
 }
 const defaultConfig: iConfig = {
-	ripple: true
+	ripple: true,
+	autoImport: true
 };
 
 export { defaultConfig };
