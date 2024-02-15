@@ -1,6 +1,6 @@
 # Installation
 
-Install Matarito-vue.
+Installation guide for Matarito-vue.
 
 ## Default installation
 
@@ -12,12 +12,13 @@ Run one of the following commands to add Matarito-vue to your project:
 npm install matarito-vue
 ```
 
-<!-- ```node [yarn]
+```node [yarn]
 yarn add matarito-vue
 ```
+
 ```node [pnpm]
 pnpm add matarito-vue
-``` -->
+```
 
 :::
 

@@ -1,8 +1,9 @@
-# Usage
+# Configuration
 
 Learn the basics of working with Matarito-vue components.
 
-## Quickstart
+
+## Import
 
 After [installation](../guide/installation), to use Matarito-vue in your application you have these two approaches:
 
@@ -14,7 +15,7 @@ After [installation](../guide/installation), to use Matarito-vue in your applica
 ```JS [Plugin import]
 import mataritoVue from 'matarito-vue'
 const app = createApp(App);
-app.use(mataritoVue, { /* options */ });
+app.use(mataritoVue, { /* configuration */ });
 ```
 
 ```vue [Component imports]
