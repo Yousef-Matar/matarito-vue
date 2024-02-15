@@ -1,8 +1,11 @@
 import { App } from "vue";
 import * as components from "./components";
+import type { iConfig } from "./config";
+import { defaultConfig } from "./config";
 import * as directives from "./directives";
-function install(app: App, options: { ripple: boolean }) {
-	app.config.globalProperties.$matarito = options;
+function install(app: App, options: iConfig = defaultConfig) {
+	app.config.globalProperties.$matarito = {};
+	app.config.globalProperties.$matarito.config = options;
 	for (const key in components) {
 		// @ts-expect-error error
 		app.component(key, components[key]);

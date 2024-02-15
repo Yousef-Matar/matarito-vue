@@ -11,7 +11,7 @@ import './preview-card.css'
 export default {
    ...DefaultTheme,
    enhanceApp({ app }) {
-     app.use(MataritoVue)
+     app.use(MataritoVue,{ripple:false})
      app.component('DemoContainer', DemoContainer)
      app.component('PreviewCard', PreviewCard)
      vitepressBackToTop({

@@ -1,4 +1,5 @@
 import type { DirectiveBinding, VNode } from "vue";
+import { nextTick } from "vue";
 import "./ripple.scss";
 interface iRippleProps {
 	color: string;
@@ -29,11 +30,13 @@ const ripple = (element: HTMLElement, clickEvent: MouseEvent, props: iRippleProp
 };
 export default {
 	mounted: (element: HTMLElement, props: DirectiveBinding, vNode: VNode) => {
-		const vueComponent = vNode?.el?.__vueParentComponent;
-		if (vueComponent.appContext.config.globalProperties.$matarito.ripple || vueComponent.props.ripple) {
-			element.classList.add("m-ripple");
-			element.onclick = (event) => ripple(element, event, props.value);
-		}
+		nextTick(() => {
+			const vueComponent = vNode?.el?.__vueParentComponent;
+			if (vueComponent.appContext.config.globalProperties.$matarito.config.ripple || vueComponent.props.ripple) {
+				element.classList.add("m-ripple");
+				element.onclick = (event) => ripple(element, event, props.value);
+			}
+		});
 	},
 	unmounted: (element: HTMLElement) => {
 		element.onclick = null;
