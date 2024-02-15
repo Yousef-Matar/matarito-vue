@@ -2,7 +2,7 @@
 
 Installation guide for Matarito-vue.
 
-## Default installation
+## Download
 
 Run one of the following commands to add Matarito-vue to your project:
 
