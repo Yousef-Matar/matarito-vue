@@ -3,9 +3,9 @@ import * as components from "./components";
 import type { iConfig } from "./config";
 import { defaultConfig } from "./config";
 import * as directives from "./directives";
-function install(app: App, options: iConfig = defaultConfig) {
+function install(app: App, options: iConfig) {
 	app.config.globalProperties.$matarito = {};
-	app.config.globalProperties.$matarito.config = options;
+	app.config.globalProperties.$matarito.config = { ...defaultConfig, ...options };
 	for (const key in components) {
 		// @ts-expect-error error
 		app.component(key, components[key]);
