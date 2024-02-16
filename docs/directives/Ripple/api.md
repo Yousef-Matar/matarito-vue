@@ -10,7 +10,7 @@ Defines valid properties in `MButtonSet` component.
 
 |    Name    |                              Type                               |         Description          |
 | :--------: | :-------------------------------------------------------------: | :--------------------------: |
-|  `color`   |       <span class="text--green">"CSS legal color"</span>        |  `Ripple` background color.  |
-| `duration` | <span class="text--green">"CSS legal animation-duration"</span> | `Ripple` animation duration. |
+|  `color`   |       <span class="text--green">CSS legal color</span>        |  `Ripple` background color.  |
+| `duration` | <span class="text--green">CSS legal animation-duration</span> | `Ripple` animation duration. |
 
 </div>
