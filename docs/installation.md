@@ -34,7 +34,7 @@ Please note that [Vue 3](https://www.npmjs.com/package/vue) is a peer dependency
 
 ## Plugin
 
-Matarito-vue plugin is recommended to be installed as an application plugin to setup the [default configuration](../configuration/options).
+Matarito-vue plugin is recommended to be installed as an application plugin to setup the [default configuration](configuration/options).
 
 ```JS
 import mataritoVue from 'matarito-vue'

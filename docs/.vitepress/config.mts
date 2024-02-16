@@ -2,7 +2,6 @@ import { resolve } from "node:path";
 import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-	base: "/matarito-vue/",
 	title: "Matarito-vue",
 	description: "A VitePress Site",
 	cleanUrls: true,
@@ -12,8 +11,8 @@ export default defineConfig({
 				text: "Getting Started",
 				collapsed: false,
 				items: [
-					{ text: "Overview", link: "/guide/overview" },
-					{ text: "Installation", link: "/guide/installation" }
+					{ text: "Overview", link: "/overview" },
+					{ text: "Installation", link: "/installation" }
 				],
 			},
 			{
@@ -100,6 +99,13 @@ export default defineConfig({
 			{
 				text: "Theming",
 				link: "/theming/theming",
+			},
+			{
+				text: "Guides",
+				collapsed: true,
+				items: [
+					{ text: "Accessibility", link: "/guides/accessibility" },
+				],
 			},
 			{
 				text: "Discover",
