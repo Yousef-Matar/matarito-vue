@@ -4,9 +4,9 @@
 
 <div class="full-width d-table">
 
-|      Name       |                                                        Default                                                         |        Description         |
-| :-------------: | :--------------------------------------------------------------------------------------------------------------------: | :------------------------: |
-| `--m-ripple-bg` | <div style="background-color:rgba(255, 255, 255, 0.6)"><span style="color:black">rgba(255, 255, 255, 0.6)</span></div> | `Ripple` background color. |
+|      Name       |                                                        Default                                                         |            Description             |
+| :-------------: | :--------------------------------------------------------------------------------------------------------------------: | :--------------------------------: |
+| `--m-ripple-bg` | <div style="background-color:rgba(255, 255, 255, 0.6)"><span style="color:black">rgba(255, 255, 255, 0.6)</span></div> | Default `Ripple` background color. |
 
 </div>
 
