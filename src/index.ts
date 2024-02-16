@@ -4,10 +4,10 @@ import { defaultConfig } from "@/config";
 import * as directives from "@/directives";
 import { App } from "vue";
 const install = (app: App, options: iConfig) => {
-	const applicationConfig = { ...defaultConfig, ...options };
+	const { autoImport, ...applicationConfig } = { ...defaultConfig, ...options };
 	app.config.globalProperties.$matarito = applicationConfig;
 
-	if (applicationConfig.autoImport) {
+	if (autoImport) {
 		for (const key in components) {
 			// @ts-expect-error error
 			app.component(key, components[key]);
