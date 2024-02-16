@@ -24,7 +24,7 @@ These variables are predefined with default values.
 
 |       Name       |                                     Default                                      |     Description     |
 | :--------------: | :------------------------------------------------------------------------------: | :-----------------: |
-| `--text-primary` | <div style="background-color:white"><span class="text--green">white</span></div> | Primary text color. |
+| `--text-primary` | <div style="background-color:white"><span style="color:black">white</span></div> | Primary text color. |
 
 </div>
 </details>
