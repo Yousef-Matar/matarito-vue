@@ -9,4 +9,3 @@ const defaultConfig: iConfig = {
 
 export { defaultConfig };
 export type { iConfig };
-

@@ -1,3 +1,3 @@
-import Ripple from "./Ripple/ripple";
+import Ripple from "@/directives/Ripple/ripple";
 
 export { Ripple };

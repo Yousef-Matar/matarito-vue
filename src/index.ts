@@ -1,12 +1,11 @@
+import * as components from "@/components";
+import type { iConfig } from "@/config";
+import { defaultConfig } from "@/config";
+import * as directives from "@/directives";
 import { App } from "vue";
-import * as components from "./components";
-import type { iConfig } from "./config";
-import { defaultConfig } from "./config";
-import * as directives from "./directives";
 const install = (app: App, options: iConfig) => {
 	const applicationConfig = { ...defaultConfig, ...options };
-	app.config.globalProperties.$matarito = {};
-	app.config.globalProperties.$matarito.config = applicationConfig;
+	app.config.globalProperties.$matarito = applicationConfig;
 
 	if (applicationConfig.autoImport) {
 		for (const key in components) {
@@ -21,6 +20,6 @@ const install = (app: App, options: iConfig) => {
 };
 
 export default { install };
-export * from "./components";
-export * from "./directives";
+export * from "@/components";
+export * from "@/directives";
 
