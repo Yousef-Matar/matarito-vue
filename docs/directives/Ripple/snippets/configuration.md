@@ -9,9 +9,9 @@ To start with, Ripple needs to be enabled globally. See the [Configuration optio
 ::: code-group
 
 ```JS [Plugin configuration]
-import mataritoVue from 'matarito-vue'
+import MataritoVue from 'matarito-vue'
 const app = createApp(App);
-app.use(mataritoVue, { ripple:true });
+app.use(MataritoVue, { ripple:true });
 ```
 
 ```vue [Composition API]

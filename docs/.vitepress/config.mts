@@ -98,7 +98,7 @@ export default defineConfig({
 			},
 			{
 				text: "Theming",
-				link: "/theming/theming",
+				link: "/theming",
 			},
 			{
 				text: "Guides",

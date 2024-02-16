@@ -8,7 +8,7 @@ outline: deep
 
 ::: tip Applicable to `MButton` only.
 
-If you set this variable it would take priority over the [default library variables](../../theming/theming).
+If you set this variable it would take priority over the [default library variables](../../theming).
 
 :::
 
