@@ -30,7 +30,6 @@ Defines valid properties in `MButton` component.
 | `loadingIcon`  |                                       <span class="text--green">String</span>                                       |  <span class="VPBadge tip">null</span>   |                                      Icon to display in loading state.                                       |
 |    `raised`    |                                      <span class="text--green">Boolean</span>                                       |  <span class="VPBadge tip">false</span>  |                                     Add a shadow to indicate elevation.                                      |
 |     `size`     |                                <span class="text--green">"sm" \| "md" \| "lg"</span>                                |   <span class="VPBadge tip">md</span>    |                                      Defines the size of the `MButton`.                                      |
-|    `ripple`    |                                      <span class="text--green">Boolean</span>                                       |  <span class="VPBadge tip">false</span>  | To override the global configuration of [`ripple`](../../directives/Ripple/features) when disabled globally. |
 
 </div>
 

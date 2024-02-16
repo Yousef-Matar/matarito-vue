@@ -32,7 +32,7 @@ export default {
 	mounted: (element: HTMLElement, props: DirectiveBinding, vNode: VNode) => {
 		nextTick(() => {
 			const vueComponent = vNode?.el?.__vueParentComponent;
-			if (vueComponent.appContext.config.globalProperties.$matarito.config.ripple || vueComponent.props.ripple) {
+			if (vueComponent.appContext.config.globalProperties.$matarito.config.ripple || props.modifiers.force) {
 				element.classList.add("m-ripple");
 				element.onclick = (event) => ripple(element, event, props.value);
 			}

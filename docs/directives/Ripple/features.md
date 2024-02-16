@@ -1,6 +1,6 @@
 # Ripple
 
-`Ripple` is an animation directive for the supported components such as `MButtons`. It is enabled by default and can to be disabled at your app's entry file (e.g. main.js) during the setup.
+`Ripple` is an animation directive for the supported components such as `MButtons`. It is enabled by default and can to be disabled at your app's entry file (e.g. main.js) during the setup. See the [Configuration options](../../configuration/options) for details.
 
 <!--@include: ./snippets/configuration.md-->
 <!--@include: ./snippets/import.md-->
