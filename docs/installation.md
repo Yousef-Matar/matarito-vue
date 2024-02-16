@@ -2,16 +2,6 @@
 
 Installation guide for Matarito-vue.
 
-## Peer dependencies
-
-Please note that [Vue 3](https://www.npmjs.com/package/vue) is a peer dependency:
-
-```json
-"peerDependencies": {
-  "vue": "^3.3.11"
-}
-```
-
 ## Download
 
 Run one of the following commands to add Matarito-vue to your project:
@@ -31,6 +21,16 @@ pnpm add matarito-vue
 ```
 
 :::
+
+## Peer dependencies
+
+Please note that [Vue 3](https://www.npmjs.com/package/vue) is a peer dependency, meaning you should ensure it is installed before installing Matarito-vue.
+
+```json
+"peerDependencies": {
+  "vue": "^3.3.11"
+}
+```
 
 ## Plugin
 
