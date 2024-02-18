@@ -4,6 +4,12 @@ search: false
 
 ## Module import
 
+::: info
+
+`MBadge` can also be imported as a directive in-order to connect it to an existing element. See [Badge directive](../../../directives/Badge/features) for details.
+
+:::
+
 ::: code-group
 
 ```vue [Composition API]

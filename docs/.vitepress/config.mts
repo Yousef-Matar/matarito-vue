@@ -102,6 +102,7 @@ export default defineConfig({
 				items: [
 					{
 						text: "Ripple",
+						collapsed: true,
 						items: [
 							{
 								text: "Features",
@@ -114,6 +115,24 @@ export default defineConfig({
 							{
 								text: "Theming",
 								link: "/directives/Ripple/theming",
+							},
+						],
+					},
+					{
+						text: "Badge",
+						collapsed: true,
+						items: [
+							{
+								text: "Features",
+								link: "/directives/Badge/features",
+							},
+							{
+								text: "API",
+								link: "/directives/Badge/api",
+							},
+							{
+								text: "Theming",
+								link: "/directives/Badge/theming",
 							},
 						],
 					},
