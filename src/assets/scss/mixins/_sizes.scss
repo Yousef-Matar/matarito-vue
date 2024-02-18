@@ -1,0 +1,19 @@
+@mixin generateSizes($base) {
+	.#{$base} {
+		&--sm {
+			font-size: var(--#{$base}-sm-font, var(--sm-font));
+			min-width: var(--#{$base}-sm-size, var(--sm-size));
+			min-height: var(--#{$base}-sm-size, var(--sm-size));
+		}
+		&--md {
+			font-size: var(--#{$base}-md-font, var(--md-font));
+			min-width: var(--#{$base}-md-size, var(--md-size));
+			min-height: var(--#{$base}-md-size, var(--md-size));
+		}
+		&--lg {
+			font-size: var(--#{$base}-lg-font, var(--lg-font));
+			min-width: var(--#{$base}-lg-size, var(--lg-size));
+			min-height: var(--#{$base}-lg-size, var(--lg-size));
+		}
+	}
+}

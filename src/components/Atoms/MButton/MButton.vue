@@ -103,6 +103,11 @@ const clickHandler = (event: MouseEvent) => (!props.propagate ? event.stopPropag
 .m-button {
 	-webkit-tap-highlight-color: transparent;
 	// Base class for button
+	color: var(--m-button-text-primary, var(--text-primary));
+	box-sizing: border-box;
+	border-radius: var(--m-button-border-radius, var(--border-radius));
+	outline: none;
+	border: unset;
 	transition-property: all;
 	transition-timing-function: linear;
 	transition-duration: 200ms;
@@ -187,4 +192,6 @@ const clickHandler = (event: MouseEvent) => (!props.propagate ? event.stopPropag
 	}
 }
 @include generateVariants(m-button);
+@include generatePaddings(m-button);
+@include generateSizes(m-button);
 </style>

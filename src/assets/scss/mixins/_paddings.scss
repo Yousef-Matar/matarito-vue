@@ -1,0 +1,13 @@
+@mixin generatePaddings($base) {
+	.#{$base} {
+		&--sm {
+			padding: var(--#{$base}-sm-padding, var(--sm-padding));
+		}
+		&--md {
+			padding: var(--#{$base}-md-padding, var(--md-padding));
+		}
+		&--lg {
+			padding: var(--#{$base}-lg-padding, var(--lg-padding));
+		}
+	}
+}

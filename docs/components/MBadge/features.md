@@ -9,7 +9,9 @@ outline: deep
 
 
 
-<DemoContainer>
-		<MBadge value="1" />
-		<MBadge>12348 </MBadge>
-</DemoContainer>
+<!--@include: ./snippets/import.md-->
+<!--@include: ./snippets/usage.md-->
+<!--@include: ./snippets/demo/basic.md-->
+<!--@include: ./snippets/demo/severity.md-->
+<!--@include: ./snippets/demo/sizes.md-->
+<!--@include: ./snippets/accessibility.md-->

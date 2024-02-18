@@ -11,5 +11,7 @@
 @import "./animations/animations";
 // Mixins
 @import "./mixins/variants";
+@import "./mixins/sizes";
+@import "./mixins/paddings";
 @import "./mixins/generate-css-variables";
 @include generateCssVariables();
