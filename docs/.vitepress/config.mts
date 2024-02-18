@@ -71,6 +71,29 @@ export default defineConfig({
 							},
 						],
 					},
+					{
+						text: "Misc",
+						items:[
+							{
+								text: "MBadge",
+								collapsed: true,
+								items: [
+									{
+										text: "Features",
+										link: "/components/MBadge/features",
+									},
+									{
+										text: "API",
+										link: "/components/MBadge/api",
+									},
+									{
+										text: "Theming",
+										link: "/components/MBadge/theming",
+									},
+								],
+							},
+						]
+					},
 				],
 			},
 			{
